@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/funnel-output_path-FiBMMGu6.tmp/uri.js

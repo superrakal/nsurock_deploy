@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tests/unit/routes/user-settings-test.coffee

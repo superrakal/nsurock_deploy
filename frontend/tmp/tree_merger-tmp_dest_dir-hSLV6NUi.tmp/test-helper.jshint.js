@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/jshinter-tmp_cache_dir-MjfMeefk.tmp/2

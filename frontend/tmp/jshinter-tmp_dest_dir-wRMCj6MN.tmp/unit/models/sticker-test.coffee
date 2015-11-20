@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tests/unit/models/sticker-test.coffee

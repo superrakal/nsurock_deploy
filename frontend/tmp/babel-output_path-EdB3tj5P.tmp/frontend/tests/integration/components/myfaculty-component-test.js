@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/babel-cache_path-299XauK7.tmp/frontend/tests/integration/components/myfaculty-component-test.js

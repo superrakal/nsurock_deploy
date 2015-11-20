@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/tree_merger-tmp_dest_dir-qIvTKozi.tmp/reexports/ember-cli-app-version.js

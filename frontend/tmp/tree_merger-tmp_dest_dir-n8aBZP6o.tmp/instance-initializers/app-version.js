@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/tree_merger-tmp_dest_dir-YUO3NhE8.tmp/instance-initializers/app-version.js

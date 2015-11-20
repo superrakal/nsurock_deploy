@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/funnel-output_path-dQheBTQY.tmp/frontend/controllers/array.js

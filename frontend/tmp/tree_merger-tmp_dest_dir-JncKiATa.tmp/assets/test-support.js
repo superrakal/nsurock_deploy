@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/class-tmp_cache_dir-py105LnA.tmp/assets/test-support.js

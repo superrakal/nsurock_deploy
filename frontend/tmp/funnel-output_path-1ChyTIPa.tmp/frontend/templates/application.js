@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tmp/tree_merger-tmp_dest_dir-pqTvgSZZ.tmp/frontend/templates/application.js

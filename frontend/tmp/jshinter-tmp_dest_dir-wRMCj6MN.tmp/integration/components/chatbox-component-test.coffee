@@ -1,0 +1,1 @@
+/home/egor/RubymineProjects/nsurock/frontend/tests/integration/components/chatbox-component-test.coffee
