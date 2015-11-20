@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/app/app.coffee

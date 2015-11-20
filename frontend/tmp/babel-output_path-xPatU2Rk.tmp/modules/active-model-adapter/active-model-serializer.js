@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/babel-cache_path-CQHE2IzF.tmp/modules/active-model-adapter/active-model-serializer.js

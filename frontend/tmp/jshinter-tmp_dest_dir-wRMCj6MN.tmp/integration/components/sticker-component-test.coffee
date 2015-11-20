@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tests/integration/components/sticker-component-test.coffee

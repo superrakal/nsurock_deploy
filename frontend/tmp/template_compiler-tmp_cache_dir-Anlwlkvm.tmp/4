@@ -1,1 +1,0 @@
-<div class="container-fluid"><h1 class="text-center">Hi, Ember.js!</h1>{{outlet}}</div>

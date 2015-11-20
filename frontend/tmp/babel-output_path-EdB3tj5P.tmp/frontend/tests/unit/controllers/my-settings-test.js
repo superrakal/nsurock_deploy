@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/babel-cache_path-299XauK7.tmp/frontend/tests/unit/controllers/my-settings-test.js

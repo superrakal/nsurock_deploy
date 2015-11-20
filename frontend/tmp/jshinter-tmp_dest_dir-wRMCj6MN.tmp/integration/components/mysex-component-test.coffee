@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tests/integration/components/mysex-component-test.coffee

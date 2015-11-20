@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/node_modules/active-model-adapter/app/instance-initializers/active-model-adapter.js

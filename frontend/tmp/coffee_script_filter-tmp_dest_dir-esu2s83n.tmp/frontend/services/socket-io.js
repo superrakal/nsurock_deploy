@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/funnel-output_path-dQheBTQY.tmp/frontend/services/socket-io.js

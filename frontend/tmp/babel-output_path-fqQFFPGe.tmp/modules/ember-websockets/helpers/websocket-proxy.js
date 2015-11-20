@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/babel-cache_path-QqvaqWRa.tmp/modules/ember-websockets/helpers/websocket-proxy.js

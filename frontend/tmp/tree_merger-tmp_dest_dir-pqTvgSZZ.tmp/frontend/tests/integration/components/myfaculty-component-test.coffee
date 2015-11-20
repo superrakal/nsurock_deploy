@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tests/integration/components/myfaculty-component-test.coffee

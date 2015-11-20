@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tests/unit/initializers/register-socket-io-test.coffee

@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/babel-cache_path-cxOohKL2.tmp/frontend/services/socket-io.js

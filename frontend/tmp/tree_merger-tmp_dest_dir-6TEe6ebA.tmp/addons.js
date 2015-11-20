@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/caching-writer-dest-dir_hvwyNE.tmp/addons.js

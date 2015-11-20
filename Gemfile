@@ -26,7 +26,7 @@ gem 'rails_admin', '~> 0.6.8'
 gem 'active_model_serializers'
 gem 'responders', '~> 2.0'
 gem 'oj'
-gem 'ember-cli-rails'
+gem 'ember-cli-rails', '~> 0.3.5'
 
 group :test, :development do
   gem 'capybara', '~> 2.3.0'

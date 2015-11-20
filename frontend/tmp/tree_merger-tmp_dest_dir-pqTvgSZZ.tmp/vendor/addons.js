@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/class-tmp_cache_dir-SZGIl1R8.tmp/addons.js

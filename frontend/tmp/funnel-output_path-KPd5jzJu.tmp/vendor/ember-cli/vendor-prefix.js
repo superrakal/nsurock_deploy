@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/custom_replace-tmp_dest_dir-7xJkAyua.tmp/vendor-prefix.js

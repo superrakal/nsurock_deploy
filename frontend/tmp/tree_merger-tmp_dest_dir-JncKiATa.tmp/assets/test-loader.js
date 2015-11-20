@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/bower_components/ember-cli-test-loader/test-loader.js

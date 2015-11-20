@@ -1,1 +1,0 @@
-/home/egor/RubymineProjects/nsurock/frontend/tmp/funnel-output_path-R6FtbYdX.tmp/ember-qunit-notifications/index.js
