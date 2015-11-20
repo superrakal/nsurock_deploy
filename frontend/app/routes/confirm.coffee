@@ -12,6 +12,9 @@ ConfirmRoute = Ember.Route.extend
     id = cookie.get('preorder_id')
     @store.find('preorder', id)
 
+  afterModel: (model) ->
+    model.reload()
+
   setupController: (controller, model) ->
     controller.set 'model', model
 
