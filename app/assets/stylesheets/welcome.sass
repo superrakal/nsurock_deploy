@@ -1,10 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300&subset=latin,cyrillic-ext)
 
+html
+  background: asset_url('background.png')
+body
+  background: transparent
+
 *
-  font-family: 'Roboto Mono'
+  font-family: 'Roboto Mono', sans-serif
 
 section
   width: 100%
+
+.modal-content
+  border-radius: 0 !important
+
+.btn
+  border-radius: 0 !important
 
 nav
   &.navbar
@@ -12,6 +23,17 @@ nav
     border: 0
     background-color: white
     border-bottom: 1px solid black
+
+.adminpanel-login
+  width: 400px
+  height: auto
+  margin: 180px auto 0 auto
+  input.form-control
+    box-shadow: none !important
+    border-color: black !important
+    border-radius:  0 !important
+    outline: none !important
+
 
 .sign_in_box
   width: 300px
@@ -28,6 +50,7 @@ nav
 
 p
   &.profile
+    cursor: pointer
     margin-left: 10px
     margin-top: 7px
 img

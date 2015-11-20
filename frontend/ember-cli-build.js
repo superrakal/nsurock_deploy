@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   });
 
   app.import('bower_components/cookie/cookie.js');
-  app.import('bower_components/jquery.nicescroll//jquery.nicescroll.js');
+  app.import('bower_components/jquery.nicescroll/jquery.nicescroll.js');
 
   return app.toTree();
 };

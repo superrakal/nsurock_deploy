@@ -1,0 +1,12 @@
+#profileModal.modal.fade role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4.modal-title Мой профиль
+      .modal-body
+        .container-fluid.text-center
+          button.btn.btn-primary{action 'sign_out'} Выйти из аккаунта
+      .modal-footer
+        button.btn.btn-primary type="button"  Закрыть

@@ -1,7 +1,8 @@
 - if !user_signed_in?
   .sign_in_box
-    =image_tag 'logo.jpg'
+    =image_tag 'logo-big.png'
     .actions
+      br
       a.btn.btn-primary.btn-block href=welcome_auth_by_vk_path
         |Войти
 - else

@@ -9,7 +9,7 @@ nav.navbar.navbar-default.navbar-fixed-top
         .sitelogo
         .clearfix
     #top-menu.collapse.navbar-collapse
-      p.navbar-right.profile
+      p.navbar-right.profile{action 'openProfileModal'}
         img.avatar src=currentUser.vk_photo
         = currentUser.first_name
         |&nbsp;
@@ -17,4 +17,5 @@ nav.navbar.navbar-default.navbar-fixed-top
       p.navbar-text.navbar-right.hidden-xs
         cart-component preorder=preorder
 = outlet
+profile-modal
 cart-modal preorder=preorder confirm='confirm'

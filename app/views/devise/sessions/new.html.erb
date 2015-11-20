@@ -1,0 +1,17 @@
+<div class="adminpanel-login text-center">
+    <h2 class="text-uppercase">Админпанель</h2>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field form-group">
+        <p>Логин</p>
+        <%= f.email_field :email, autofocus: true, class:"form-control" %>
+      </div>
+      <div class="field form-group">
+        <p>Пароль</p>
+        <%= f.password_field :password, autocomplete: "off", class:"form-control" %>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary btn-block text-uppercase">Войти</button>
+      </div>
+    <% end %>
+</div>
