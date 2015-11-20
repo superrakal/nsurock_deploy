@@ -1,3 +1,10 @@
-= include_ember_script_tags :frontend
-= include_ember_stylesheet_tags :frontend
-#ember
+- if !user_signed_in?
+  .sign_in_box
+    =image_tag 'logo.jpg'
+    .actions
+      a.btn.btn-primary.btn-block href=welcome_auth_by_vk_path
+        |Войти
+- else
+  = include_ember_script_tags :frontend
+  = include_ember_stylesheet_tags :frontend
+  #ember

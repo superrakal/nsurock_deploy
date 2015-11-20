@@ -22,6 +22,10 @@ gem 'animate-rails'
 #Adminpanel
 gem 'rails_admin', '~> 0.6.8'
 
+#Auth
+gem 'devise'
+gem 'vkontakte_api', '~> 1.4'
+
 #Ember
 gem 'active_model_serializers'
 gem 'responders', '~> 2.0'

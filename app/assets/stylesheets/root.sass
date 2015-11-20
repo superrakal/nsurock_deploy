@@ -1,0 +1,60 @@
+@import "variables"
+.home
+  margin-top: 58px
+  .panel
+    position: relative
+    section
+      position: relative
+      .blue-mask
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: $dark-blue
+        opacity: 0.5
+        -webkit-transition: opacity .8s,color .2s
+        transition: opacity .8s,color .2s
+        &:hover
+          opacity: 0
+          -webkit-transition: opacity .8s,color .2s
+          transition: opacity .8s,color .2s
+    &#drinks
+      section
+        background: asset_url('coffee.jpg') center no-repeat
+        background-size: cover
+    &#food
+      section
+        background: asset_url('food.jpg') center no-repeat
+        background-size: cover
+    .title
+      h2
+        margin: 0
+        padding: 0
+        text-transform: uppercase
+        font-size: 25px
+      padding: 5px
+      border: 2px solid black
+      color: black
+      background-color: white
+      cursor: pointer
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 200px
+      margin-left: -100px
+      margin-top: -20px
+
+  .panel, .panel-group
+    margin: 0 !important
+    padding: 0 !important
+    border: 0 !important
+    border-radius: 0 !important
+
+.logo
+  width: 100%
+  background: asset_url('logo.jpg') center no-repeat
+  background-size: contain
+
+.navbar-right.profile
+  width: 170px

@@ -9745,3 +9745,190 @@ Started GET "/" for 127.0.0.1 at 2015-11-20 09:46:21 +0600
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.slim within layouts/application (808.3ms)
 Completed 200 OK in 1853ms (Views: 1852.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 10:11:05 +0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.slim within layouts/application (142.4ms)
+Warning. Error encountered while saving cache 039627f7da8fc9775ff94b99a6deedcf5baa2479/welcome.sassc: can't dump IO
+
+Warning. Error encountered while saving cache 039627f7da8fc9775ff94b99a6deedcf5baa2479/welcome.sassc: can't dump IO
+
+Completed 200 OK in 741ms (Views: 740.8ms)
+
+
+Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-20 10:11:13 +0600
+Processing by WelcomeController#auth_by_vk as HTML
+Redirected to https://oauth.vk.com/authorize?client_id=5152341&redirect_uri=http%3A%2F%2Flocal.vcap.me%3A3000%2Fwelcome%2Fvk_auth_callback&response_type=code&state=5e4342f94a4d4cfc958562266d678584
+Completed 302 Found in 9ms
+
+
+Started GET "/welcome/vk_auth_callback?code=cd4acdb5758582e2a6&state=5e4342f94a4d4cfc958562266d678584" for 127.0.0.1 at 2015-11-20 10:11:13 +0600
+Processing by WelcomeController#vk_auth_callback as HTML
+  Parameters: {"code"=>"cd4acdb5758582e2a6", "state"=>"5e4342f94a4d4cfc958562266d678584"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=nsumint_development collection=users selector={"$query"=>{"vk_id"=>"id221246142"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3436ms
+  MOPED: 127.0.0.1:27017 QUERY        database=nsumint_development collection=users selector={"email"=>"nsu_topolnyak@vk.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3822ms
+Completed 500 Internal Server Error in 704ms
+
+NameError - uninitialized constant Preorder:
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.3) lib/active_support/core_ext/string/inflections.rb:66:in `constantize'
+  mongoid (4.0.2) lib/mongoid/relations/metadata.rb:575:in `klass'
+  mongoid (4.0.2) lib/mongoid/relations/referenced/many.rb:563:in `criteria'
+  mongoid (4.0.2) lib/mongoid/relations/metadata.rb:181:in `criteria'
+  mongoid (4.0.2) lib/mongoid/relations/builders/referenced/many.rb:20:in `build'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:43:in `create_relation'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:26:in `__build__'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:104:in `block (2 levels) in get_relation'
+  mongoid (4.0.2) lib/mongoid/threaded/lifecycle.rb:125:in `_loading'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:100:in `block in get_relation'
+  mongoid (4.0.2) lib/mongoid/threaded/lifecycle.rb:84:in `_building'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:99:in `get_relation'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:187:in `block in getter'
+  mongoid (4.0.2) lib/mongoid/validatable.rb:73:in `block in read_attribute_for_validation'
+  mongoid (4.0.2) lib/mongoid/relations/accessors.rb:140:in `without_autobuild'
+  mongoid (4.0.2) lib/mongoid/validatable.rb:73:in `read_attribute_for_validation'
+  activemodel (4.2.3) lib/active_model/validator.rb:149:in `block in validate'
+  activemodel (4.2.3) lib/active_model/validator.rb:148:in `each'
+  activemodel (4.2.3) lib/active_model/validator.rb:148:in `validate'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:453:in `public_send'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:453:in `block in make_lambda'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:190:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:190:in `block in simple'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `each'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:502:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  mongoid (4.0.2) lib/mongoid/interceptable.rb:138:in `run_callbacks'
+  activemodel (4.2.3) lib/active_model/validations.rb:395:in `run_validations!'
+  activemodel (4.2.3) lib/active_model/validations/callbacks.rb:113:in `block in run_validations!'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  mongoid (4.0.2) lib/mongoid/interceptable.rb:138:in `run_callbacks'
+  activemodel (4.2.3) lib/active_model/validations/callbacks.rb:113:in `run_validations!'
+  activemodel (4.2.3) lib/active_model/validations.rb:334:in `valid?'
+  mongoid (4.0.2) lib/mongoid/validatable.rb:97:in `valid?'
+  activemodel (4.2.3) lib/active_model/validations.rb:371:in `invalid?'
+  mongoid (4.0.2) lib/mongoid/persistable/creatable.rb:115:in `prepare_insert'
+  mongoid (4.0.2) lib/mongoid/persistable/creatable.rb:23:in `insert'
+  mongoid (4.0.2) lib/mongoid/persistable/creatable.rb:180:in `block in create!'
+  mongoid (4.0.2) lib/mongoid/threaded/lifecycle.rb:156:in `_creating'
+  mongoid (4.0.2) lib/mongoid/persistable/creatable.rb:175:in `create!'
+  app/models/user.rb:43:in `find_for_vkontakte_oauth'
+  app/controllers/welcome_controller.rb:12:in `vk_auth_callback'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  ember-cli-rails (0.3.5) lib/ember-cli/middleware.rb:14:in `call'
+  rack-pjax (0.8.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/530f0e1d4c2e662f/variables" for 127.0.0.1 at 2015-11-20 10:11:14 +0600
+
+
+Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-20 10:11:35 +0600
+Processing by WelcomeController#auth_by_vk as HTML
+Redirected to https://oauth.vk.com/authorize?client_id=5152341&redirect_uri=http%3A%2F%2Flocal.vcap.me%3A3000%2Fwelcome%2Fvk_auth_callback&response_type=code&state=5812b3476a4c2e251fd0226a41a85062
+Completed 302 Found in 1ms
+
+
+Started GET "/welcome/vk_auth_callback?code=b0ed21aba96322524f&state=5812b3476a4c2e251fd0226a41a85062" for 127.0.0.1 at 2015-11-20 10:11:35 +0600
+Processing by WelcomeController#vk_auth_callback as HTML
+  Parameters: {"code"=>"b0ed21aba96322524f", "state"=>"5812b3476a4c2e251fd0226a41a85062"}
+  MOPED: 127.0.0.1:27017 QUERY        database=nsumint_development collection=users selector={"$query"=>{"vk_id"=>"id221246142"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3717ms
+  MOPED: 127.0.0.1:27017 QUERY        database=nsumint_development collection=users selector={"email"=>"nsu_topolnyak@vk.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3691ms
+  MOPED: 127.0.0.1:27017 INSERT       database=nsumint_development collection=users documents=[{"_id"=>BSON::ObjectId('564e9d78d3054d2b72000000'), "vk_id"=>"id221246142", "vk_screen_name"=>"nsu_topolnyak", "first_name"=>"Егор", "last_name"=>"Топольняк", "vk_photo"=>"http://cs627923.vk.me/v627923142/1d3c/WH834RWzok0.jpg", "token"=>"af16407028a9d5b218a2dd04748b45454c306604fd51debf29ccb4b577dfc029d47f8c992c58255f5f600", "email"=>"nsu_topolnyak@vk.com", "encrypted_password"=>"$2a$10$2T7YSU5trp2H3GWHpAD69eVpOXBtlN8RX0gOfM0r/DkOR0uBTxDV6", "sign_in_count"=>0, "reset_password_token"=>nil, "reset_password_sent_at"=>nil}] flags=[]
+                         COMMAND      database=nsumint_development command={:getlasterror=>1, :w=>1} runtime: 0.3874ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=nsumint_development collection=users selector={"_id"=>BSON::ObjectId('564e9d78d3054d2b72000000')} update={"$set"=>{"last_sign_in_at"=>2015-11-20 04:11:36 UTC, "current_sign_in_at"=>2015-11-20 04:11:36 UTC, "last_sign_in_ip"=>"127.0.0.1", "current_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>1}} flags=[]
+                         COMMAND      database=nsumint_development command={:getlasterror=>1, :w=>1} runtime: 0.4210ms
+Redirected to http://local.vcap.me:3000/
+Completed 302 Found in 603ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 10:11:36 +0600
+Processing by WelcomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=nsumint_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('564e9d78d3054d2b72000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4237ms
+  Rendered welcome/index.html.slim within layouts/application (923.8ms)
+Completed 200 OK in 1127ms (Views: 1126.7ms)
