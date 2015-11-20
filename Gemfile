@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 # MongoDB support
 gem 'mongoid', '~>4.0.0'
 gem 'mongoid-paperclip', require: 'mongoid_paperclip'
+gem 'mongoid-autoinc'
 gem 'paperclip', '~>4.2.0'
 
 # View handles

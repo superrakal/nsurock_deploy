@@ -1,0 +1,14 @@
+= if isWhite
+  .pull-left{action 'toggleType'}
+    = if isSelected
+      i.fa.fa-check
+    = else
+      .white-bread.pull-left
+  .type-title.pull-left{action 'toggleType'} Белый хлеб
+= else
+  .pull-right{action 'toggleType'}
+    = if isSelected
+      i.fa.fa-check
+    = else
+      .black-bread.pull-right
+  .type-title.pull-right{action 'toggleType'} Черный хлеб

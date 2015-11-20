@@ -1,0 +1,52 @@
+#cart.modal.fade role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4.modal-title Корзина
+      .modal-body
+        .drinks
+          h3.text-center Напитки
+          = if drinkPreorderCount
+            = each preorder.drink_preorders.content as |drink_preorder|
+              .drink
+                .pull-left
+                  = drink_preorder.drink.name
+                  .syurups.hidden-xs
+                    = each drink_preorder.syurups as |syurup|
+                      .syurup
+                        img src=syurup.image
+                .pull-right{action 'destroyDrink' drink_preorder}
+                  = drink_preorder.sumPrice
+                  |&nbsp;руб.&nbsp;
+                  i.fa.fa-times
+                  span.hidden-xs &nbsp;
+                .clearfix
+          = else
+            p.text-center Вы не выбрали напитки
+        .foods
+          h3.text-center Закуска
+          = if foodPreorderCount
+            = each preorder.food_preorders.content as |food_preorder|
+              .food
+                .pull-left
+                  = food_preorder.food.name
+                  .syurups.hidden-xs
+                    = each drink_preorder.syurups as |syurup|
+                      .syurup
+                        img src=syurup.image
+                .pull-right{action 'destroyFood' food_preorder}
+                  = food_preorder.food.price
+                  |&nbsp;руб.&nbsp;
+                  i.fa.fa-times
+                  span.hidden-xs &nbsp;
+                .clearfix
+          = else
+            p.text-center Вы не выбрали закуску
+        .comments class=isConfirmed:super
+          = textarea class="form-control" placeholder='Коментарии к заказу' value=preorder.comments
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Закрыть
+        = if size
+          button.btn.btn-primary{action 'confirm'} type="button" Заказать

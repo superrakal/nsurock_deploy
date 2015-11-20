@@ -1,0 +1,19 @@
+= if isFull
+  .col-lg-4.col-sm-6.col-xs-12.syurup
+    .syurup-wrapper.disabled
+      .icon
+        i.fa.fa-minus
+      .name
+        = syurup.name
+      .clearfix
+= else
+  .col-lg-4.col-sm-6.col-xs-12.syurup{action 'toggleSyurup'}
+    .syurup-wrapper class=isIn:super
+      .icon
+        = if isIn
+          i.fa.fa-check
+        = else
+          img.syurup src=syurup.image
+      .name
+        = syurup.name
+      .clearfix

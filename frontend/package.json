@@ -36,6 +36,7 @@
     "ember-cli-qunit": "0.3.15",
     "ember-cli-rails-addon": "0.0.12",
     "ember-cli-release": "0.2.3",
+    "ember-cli-simple-auth": "0.8.0",
     "ember-cli-uglify": "^1.0.1",
     "ember-data": "1.13.5",
     "ember-disable-proxy-controllers": "^1.0.0",

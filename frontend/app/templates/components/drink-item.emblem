@@ -1,0 +1,39 @@
+.item-card.col-lg-3.col-md-4.col-sm-6.col-xs-12
+  .item-wrapper
+    .image
+      img src=drink.image
+    .info
+      .item-title.text-center
+        h3
+          = drink.name
+      .additional
+        .price.pull-left
+          = drink.price
+          |&nbsp;руб.
+        .volume.pull-right
+          = drink.volume
+          |&nbsp;мл.
+    .action
+      button.btn.btn-block{action 'choose_drink'} В корзину
+
+#adds.modal.fade role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4.modal-title Выберите добавки
+      .modal-body
+        h3.text-center Сиропы
+        .container-fluid
+          = each syurups as |syurup|
+            syurup-component syurup=syurup drink_preorder=drink_preorder
+        = if isMoreThanOneSyurup
+          .alert.alert-warning.alert-dismissible.fade.in role="alert"
+            button.close aria-label="Close" data-dismiss="alert" type="button"
+              span aria-hidden="true"  ×
+            strong Внимание!
+            | Вы выбрали больше одного сиропа - стоимость заказа увеличена на 20 руб.
+      .modal-footer
+        button.btn.btn-default{action 'dismiss'}     type="button"  Отмена
+        button.btn.btn-primary{action 'add_to_cart'} type="button"  Выбрать

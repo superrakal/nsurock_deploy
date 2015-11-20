@@ -1,0 +1,13 @@
+.cart{action 'showCart'}
+  .visible-xs
+    i.fa.fa-shopping-cart
+    span
+      |&nbsp;(
+      = size
+      |)
+  .hidden-xs
+    i.fa.fa-shopping-cart
+    span
+      |&nbsp;Корзина&nbsp;(
+      = size
+      |)

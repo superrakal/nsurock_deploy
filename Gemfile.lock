@@ -206,6 +206,8 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-autoinc (4.0.0)
+      mongoid (~> 4.0)
     mongoid-paperclip (0.0.10)
       paperclip (>= 2.3.6, != 4.3.0)
     moped (2.0.7)
@@ -423,6 +425,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongoid (~> 4.0.0)
+  mongoid-autoinc
   mongoid-paperclip
   net-ssh (~> 2.7.0)
   nginx-config

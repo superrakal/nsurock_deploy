@@ -1,0 +1,29 @@
+.home
+  .panel#instruction.hidden-xs
+    section
+      .col-lg-3.col-md-4.col-sm-6
+        .logo
+      .col-lg-9.col-md-8.col-sm-6
+        h1 Сервис предзаказов
+        h3
+          p Закажи кофе и сэндвич не выходя из кабинета!
+          p Не стой в очереди, опаздывая на пару!
+  #accordion.panel-group
+    .panel#drinks
+      section
+        .blue-mask
+        .title.text-center
+          h2 data-parent="#accordion" data-toggle="collapse" href="#collapseDrink"  Напитки
+      #collapseDrink.panel-collapse.collapse
+        .container.items
+          = each drinks as |drink|
+            drink-item drink=drink syurups=syurups preorder=preorder store=store
+    .panel#food
+      section
+        .blue-mask
+        .title.text-center
+          h2 data-parent="#accordion" data-toggle="collapse" href="#collapseFood"  Закуска
+      #collapseFood.panel-collapse.collapse
+        .container.items
+          = each foods as |food|
+            food-item food=food sauces=sauces preorder=preorder store=store

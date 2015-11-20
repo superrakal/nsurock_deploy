@@ -1,0 +1,36 @@
+.item-card.col-lg-3.col-md-4.col-sm-6.col-xs-12
+  .item-wrapper
+    .image
+      img src=food.image
+    .info
+      .item-title.text-center
+        h3
+          = food.name
+      .additional
+        .price.pull-left
+          = food.price
+          |&nbsp;руб.
+    .action
+      button.btn.btn-block{action 'choose_food'} В корзину
+
+#adds.modal.fade role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4.modal-title Выберите параметры
+      .modal-body
+        h3.text-center Тип хлеба
+        .container-fluid.bread-types
+          .pull-left
+            bread-type-component food=food_preorder isWhite=true type='Белый'
+          .pull-right
+            bread-type-component food=food_preorder isWhite=false type='Черный'
+        h3.text-center Соус
+        .container-fluid
+          = each sauces as |sauce|
+            sauce-component sauce=sauce food=food
+      .modal-footer
+        button.btn.btn-default{action 'dismiss'}     type="button"  Отмена
+        button.btn.btn-primary{action 'add_to_cart'} type="button"  Выбрать

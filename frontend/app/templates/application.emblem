@@ -1,3 +1,20 @@
-.container-fluid
-  h1.text-center Hi, Ember.js!
-  = outlet
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed aria-expanded="false" data-target="#top-menu" data-toggle="collapse" type="button"
+        i.fa.fa-user
+      button.navbar-toggle
+        cart-component preorder=preorder
+      a href="/"
+        .sitelogo
+        .clearfix
+    #top-menu.collapse.navbar-collapse
+      p.navbar-right.profile
+        img.avatar src=currentUser.vk_photo
+        = currentUser.first_name
+        |&nbsp;
+        = currentUser.last_name
+      p.navbar-text.navbar-right.hidden-xs
+        cart-component preorder=preorder
+= outlet
+cart-modal preorder=preorder confirm='confirm'

@@ -18,6 +18,8 @@
     "socket.io-client": "~1.0.6",
     "ionsound": "~3.0.6",
     "jquery.nicescroll": "~3.6.0",
-    "hint": "~1.4.0"
+    "hint": "~1.4.0",
+    "cookie": "~1.1.0",
+    "ember-simple-auth": "0.8.0"
   }
 }

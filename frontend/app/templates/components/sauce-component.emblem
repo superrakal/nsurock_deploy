@@ -1,0 +1,10 @@
+.col-lg-4.col-sm-6.col-xs-12.sauce{action 'toggleSauce'}
+  .sauce-wrapper class=isSelected:super
+    .icon
+      = if isSelected
+        i.fa.fa-check
+      = else
+        img.sauce src=sauce.image
+    .name
+      = sauce.name
+    .clearfix
