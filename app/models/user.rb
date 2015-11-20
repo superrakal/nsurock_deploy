@@ -11,6 +11,7 @@ class User
   field :last_name,      type: String, default: ""
   field :vk_photo,       type: String, default: ""
   field :token,          type: String, default: ""
+  field :is_admin,       type: Boolean, default: false
 
   ## Database authenticatable
   field :email,              type: String, default: ""

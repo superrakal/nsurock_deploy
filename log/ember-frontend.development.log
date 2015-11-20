@@ -4624,3 +4624,20 @@ SourcemapConcat (3)                           | 49ms (16 ms)
 TreeMerger (appAndDependencies) (1)           | 37ms                
 ES6: App Tree (1)                             | 28ms                
 
+file changed templates/components/profile-modal.emblem
+
+Build successful - 550ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 119ms               
+Funnel: App JS Files                          | 103ms               
+TreeMerger (appAndDependencies)               | 41ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 119ms               
+Funnel: App JS Files (1)                      | 103ms               
+SourcemapConcat (3)                           | 45ms (15 ms)        
+TreeMerger (appAndDependencies) (1)           | 41ms                
+

@@ -9,4 +9,4 @@
         .container-fluid.text-center
           button.btn.btn-primary{action 'sign_out'} Выйти из аккаунта
       .modal-footer
-        button.btn.btn-primary type="button"  Закрыть
+        button.btn.btn-primary data-dismiss="modal" type="button"  Закрыть
