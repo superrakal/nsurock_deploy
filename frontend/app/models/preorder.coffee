@@ -9,4 +9,6 @@ Preorder = DS.Model.extend
   drink_preorders: DS.hasMany 'drink-preorder', async: true
   food_preorders:  DS.hasMany 'food-preorder', async: true
 
+  new_preorder_message:        DS.attr 'string'
+
 `export default Preorder`

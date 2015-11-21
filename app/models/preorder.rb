@@ -28,6 +28,56 @@ class Preorder
     end
     total_price
   end
+  
+  def new_preorder_message
+    message = "Новый+заказ!<br>Номер+заказа:+#{self.number}<br>Заказчик:+#{self.user.first_name}+#{self.user.last_name}<br><br>"
+    if self.drink_preorders.count > 0
+      message = message+"Напитки:<br>"
+      self.drink_preorders.each do |drink_preorder|
+        с_drink = drink_preorder.drink.name.gsub!(/ /,"+").to_s
+        if с_drink.length > 0
+          drink=с_drink
+        else
+          drink = drink_preorder.drink.name
+        end
+        message = message+"--"+drink+";<br>"
+        if drink_preorder.syurups.count > 0
+          message = message+"----Сиропы:+"
+          drink_preorder.syurups.each do |syurup|
+            c_syurup = syurup.name.gsub!(/ /,"+").to_s
+            if c_syurup.length > 0
+              syurup=c_syurup
+            else
+              syurup = syurup.name
+            end
+            message = message+syurup+";+"
+          end
+        end
+        message = message+"<br><br>"
+      end
+    end
+    if self.food_preorders.count > 0
+      message = message+"Закуски:<br>"
+      self.food_preorders.each do |food_preorder|
+        food = food_preorder.food.name.gsub!(/ /,"+").to_s
+        message = message+"--"+food+";<br>"
+        message = message+"----Тип+хлеба:+"+food_preorder.bread_type.to_s+"<br>"
+        if food_preorder.sauce.present?
+          message = message+"----Соус:+"+food_preorder.sauce.to_s
+        end
+        message = message+"<br><br>"
+      end
+    end
+    if self.comments.present?
+      comments = self.comments.gsub!(/ /,"+").to_s
+      if comments.length == 0
+        comments = self.comments.to_s
+      end
+      message = message + "Коментарии+к+заказу:+"+comments+"<br><br>"
+    end
+    message = message+"К+оплате:+"+self.total_price.to_s+"+руб."
+    return message
+  end
 
   validates_uniqueness_of :number
 end
