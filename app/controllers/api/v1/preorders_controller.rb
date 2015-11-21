@@ -33,7 +33,12 @@ module Api
           if @preorder.drink_preorders.count > 0
             @message = @message+"Напитки:<br>"
             @preorder.drink_preorders.each do |drink_preorder|
-              drink = drink_preorder.drink.name.gsub!(/ /,"+").to_s
+              с_drink = drink_preorder.drink.name.gsub!(/ /,"+").to_s
+              if с_drink.length > 0
+                drink=с_drink
+              else
+                drink = drink_preorder.drink.name
+              end
               @message = @message+"--"+drink+";<br>"
               if drink_preorder.syurups.count > 0
                 @message = @message+"----Сиропы:+"

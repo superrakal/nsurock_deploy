@@ -4763,3 +4763,22 @@ Concat: Vendor (1)                            | 1889ms
 CoffeeScriptFilter (2)                        | 222ms (111 ms)      
 Babel (5)                                     | 165ms (33 ms)       
 
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding.Building...
+
+Build successful - 4359ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 2441ms              
+Babel                                         | 508ms               
+Babel                                         | 297ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 2441ms              
+Babel (5)                                     | 973ms (194 ms)      
+
