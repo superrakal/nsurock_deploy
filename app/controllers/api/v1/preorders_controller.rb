@@ -77,6 +77,7 @@ module Api
           end
           @message = @message+"К+оплате:+"+@preorder.total_price.to_s+"+руб."
           vk_send_message(@message)
+          puts @message
           respond_with @preorder, status: 200
         end
       end
