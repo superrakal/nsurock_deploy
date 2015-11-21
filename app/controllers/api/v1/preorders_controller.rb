@@ -17,7 +17,7 @@ module Api
       def vk_send_message(message)
         http = Net::HTTP.new("api.vkontakte.ru", 443)
         http.use_ssl = true
-        http.request(Net::HTTP::Get.new("/method/messages.send?domain=nsu_topolnyak&message=#{message}&access_token=6e58601f984637c9acb9272a8673d0c92cc9b9ef06d07a13f805283178ecc5dcbfbc90a661fce824191d3"))
+        http.request(Net::HTTP::Get.new("/method/messages.send?domain=nsu_topolnyak&message=#{message}&access_token=5e0c5cc8543a5dbecc47126eb0c0db8bac81875cce6ac4ec78c5dd90df41cda0300e600e9b6b1e482d43b"))
       end
 
       def new
