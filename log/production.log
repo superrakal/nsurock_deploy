@@ -2384,3 +2384,589 @@ ActionController::RoutingError (No route matches [GET] "/assets/application-7ad7
   /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
 
 
+D, [2015-11-21T13:38:35.167377 #3195] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6829ms
+I, [2015-11-21T13:38:40.082340 #3195]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:38:40 +0600
+I, [2015-11-21T13:38:40.089692 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:38:40.108589 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (16.5ms)
+I, [2015-11-21T13:38:40.113648 #3195]  INFO -- : Completed 200 OK in 24ms (Views: 23.7ms)
+I, [2015-11-21T13:38:40.194289 #3195]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:38:40 +0600
+I, [2015-11-21T13:38:40.195165 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:38:40.195235 #3195]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+I, [2015-11-21T13:38:40.197690 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:38:40.198023 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms)
+I, [2015-11-21T13:38:40.198666 #3195]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:38:40 +0600
+I, [2015-11-21T13:38:40.199301 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:38:40.199400 #3195]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+I, [2015-11-21T13:38:40.200625 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.8ms)
+I, [2015-11-21T13:38:40.201269 #3195]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:38:40.268526 #3195]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:38:40 +0600
+I, [2015-11-21T13:38:40.269237 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:38:40.269294 #3195]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+I, [2015-11-21T13:38:40.270346 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.7ms)
+I, [2015-11-21T13:38:40.270669 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.2ms)
+I, [2015-11-21T13:38:43.747596 #3195]  INFO -- : Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-21 13:38:43 +0600
+I, [2015-11-21T13:38:43.748192 #3195]  INFO -- : Processing by WelcomeController#auth_by_vk as HTML
+I, [2015-11-21T13:38:43.753117 #3195]  INFO -- : Redirected to https://oauth.vk.com/authorize?client_id=4414019&redirect_uri=http%3A%2F%2Fnsurock.ru%2Fwelcome%2Fvk_auth_callback&response_type=code&state=422284cf6d730c088f234592729ce069
+I, [2015-11-21T13:38:43.753187 #3195]  INFO -- : Completed 302 Found in 5ms
+I, [2015-11-21T13:39:02.554263 #3195]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.555070 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.555861 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.4ms)
+I, [2015-11-21T13:39:02.556325 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms)
+I, [2015-11-21T13:39:02.561482 #3195]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.562000 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.563632 #3195]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+I, [2015-11-21T13:39:02.564491 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:39:02.564854 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms)
+I, [2015-11-21T13:39:02.565446 #3195]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.566011 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.566046 #3195]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+I, [2015-11-21T13:39:02.566849 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:39:02.567187 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms)
+I, [2015-11-21T13:39:02.567717 #3195]  INFO -- : Started GET "/assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.568146 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.568251 #3195]  INFO -- :   Parameters: {"path"=>"assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png"}
+I, [2015-11-21T13:39:02.569012 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:39:02.569352 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms)
+I, [2015-11-21T13:39:02.607184 #3195]  INFO -- : Started GET "/assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.607694 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.607727 #3195]  INFO -- :   Parameters: {"path"=>"assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png"}
+I, [2015-11-21T13:39:02.608536 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:39:02.608914 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms)
+I, [2015-11-21T13:39:02.653604 #3195]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:39:02 +0600
+I, [2015-11-21T13:39:02.654153 #3195]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:02.654216 #3195]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+I, [2015-11-21T13:39:02.655074 #3195]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:39:02.655405 #3195]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms)
+I, [2015-11-21T13:39:04.819127 #3195]  INFO -- : Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-21 13:39:04 +0600
+I, [2015-11-21T13:39:04.820541 #3195]  INFO -- : Processing by WelcomeController#auth_by_vk as HTML
+I, [2015-11-21T13:39:04.822583 #3195]  INFO -- : Redirected to https://oauth.vk.com/authorize?client_id=4414019&redirect_uri=http%3A%2F%2Fnsurock.ru%2Fwelcome%2Fvk_auth_callback&response_type=code&state=d211cfc14fa1dfb8444c6306a4582d39
+I, [2015-11-21T13:39:04.822767 #3195]  INFO -- : Completed 302 Found in 2ms
+D, [2015-11-21T13:39:54.252578 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6996ms
+I, [2015-11-21T13:39:58.009548 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:39:58 +0600
+I, [2015-11-21T13:39:58.016752 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:58.034565 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (15.9ms)
+I, [2015-11-21T13:39:58.037647 #3319]  INFO -- : Completed 200 OK in 21ms (Views: 20.7ms)
+I, [2015-11-21T13:39:58.042360 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:39:58 +0600
+I, [2015-11-21T13:39:58.043107 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:58.044245 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+I, [2015-11-21T13:39:58.045362 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.6ms)
+I, [2015-11-21T13:39:58.045722 #3319]  INFO -- : Completed 200 OK in 1ms (Views: 1.2ms)
+I, [2015-11-21T13:39:58.046325 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:39:58 +0600
+I, [2015-11-21T13:39:58.046895 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:58.046958 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+I, [2015-11-21T13:39:58.047680 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.4ms)
+I, [2015-11-21T13:39:58.048022 #3319]  INFO -- : Completed 200 OK in 1ms (Views: 0.9ms)
+I, [2015-11-21T13:39:58.049611 #3319]  INFO -- : Started GET "/assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png" for 127.0.0.1 at 2015-11-21 13:39:58 +0600
+I, [2015-11-21T13:39:58.049993 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:58.050027 #3319]  INFO -- :   Parameters: {"path"=>"assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png"}
+I, [2015-11-21T13:39:58.050628 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.4ms)
+I, [2015-11-21T13:39:58.050908 #3319]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms)
+I, [2015-11-21T13:39:58.116616 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:39:58 +0600
+I, [2015-11-21T13:39:58.117131 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:39:58.117165 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+I, [2015-11-21T13:39:58.117910 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.4ms)
+I, [2015-11-21T13:39:58.118224 #3319]  INFO -- : Completed 200 OK in 1ms (Views: 0.9ms)
+I, [2015-11-21T13:40:00.887203 #3319]  INFO -- : Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-21 13:40:00 +0600
+I, [2015-11-21T13:40:00.889035 #3319]  INFO -- : Processing by WelcomeController#auth_by_vk as HTML
+I, [2015-11-21T13:40:00.903626 #3319]  INFO -- : Redirected to https://oauth.vk.com/authorize?client_id=5152341&redirect_uri=http%3A%2F%2Flocal.vcap.me%3A3000%2Fwelcome%2Fvk_auth_callback&response_type=code&state=6fc0094c1c87a94ed6ab899778874c6e
+I, [2015-11-21T13:40:00.903885 #3319]  INFO -- : Completed 302 Found in 15ms
+I, [2015-11-21T13:40:05.858219 #3319]  INFO -- : Started GET "/welcome/vk_auth_callback?code=11999f4c47188e58e4&state=6fc0094c1c87a94ed6ab899778874c6e" for 127.0.0.1 at 2015-11-21 13:40:05 +0600
+I, [2015-11-21T13:40:05.859701 #3319]  INFO -- : Processing by WelcomeController#vk_auth_callback as HTML
+I, [2015-11-21T13:40:05.859798 #3319]  INFO -- :   Parameters: {"code"=>"11999f4c47188e58e4", "state"=>"6fc0094c1c87a94ed6ab899778874c6e"}
+D, [2015-11-21T13:40:06.153602 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6962ms
+W, [2015-11-21T13:40:06.153925 #3319]  WARN -- :   MOPED: Retrying connection attempt 1 more time(s), nodes is [], seeds are [<Moped::Node resolved_address="127.0.0.1:27017">], cluster is #<Moped::Cluster:69960186263920 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>. Error backtrace is ["/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/cluster.rb:254:in `with_primary'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/read_preference/primary.rb:55:in `block in with_node'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/retryable.rb:30:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/retryable.rb:30:in `with_retry'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/read_preference/primary.rb:54:in `with_node'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/query.rb:128:in `first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'", "/home/egor/RubymineProjects/nsurock/app/models/user.rb:35:in `find_for_vkontakte_oauth'", "/home/egor/RubymineProjects/nsurock/app/controllers/welcome_controller.rb:12:in `vk_auth_callback'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:198:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:88:in `run_callbacks'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:137:in `process'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionview-4.2.3/lib/action_view/rendering.rb:30:in `process'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal.rb:196:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal.rb:237:in `block in action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:45:in `serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:43:in `block in serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `each'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:821:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-pjax-0.8.0/lib/rack/pjax.rb:12:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/remotipart-1.2.1/lib/remotipart/middleware.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/flash.rb:260:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/cookies.rb:560:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:84:in `run_callbacks'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'"]. runtime: n/a
+D, [2015-11-21T13:40:06.404928 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7337ms
+I, [2015-11-21T13:40:06.405181 #3319]  INFO -- : Completed 500 Internal Server Error in 545ms
+F, [2015-11-21T13:40:06.405741 #3319] FATAL -- : 
+Moped::Errors::ConnectionFailure (Could not connect to a primary node for replica set #<Moped::Cluster:69960186263920 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+  app/models/user.rb:35:in `find_for_vkontakte_oauth'
+  app/controllers/welcome_controller.rb:12:in `vk_auth_callback'
+
+
+I, [2015-11-21T13:40:06.433944 #3319]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-11-21 13:40:06 +0600
+I, [2015-11-21T13:40:06.434509 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:06.434546 #3319]  INFO -- :   Parameters: {"path"=>"favicon.ico"}
+I, [2015-11-21T13:40:06.435428 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (0.5ms)
+I, [2015-11-21T13:40:06.435793 #3319]  INFO -- : Completed 200 OK in 1ms (Views: 1.1ms)
+I, [2015-11-21T13:40:33.419287 #3319]  INFO -- : Started GET "/welcome/vk_auth_callback?code=daf739d1d50cd7bf1c&state=6fc0094c1c87a94ed6ab899778874c6e" for 127.0.0.1 at 2015-11-21 13:40:33 +0600
+I, [2015-11-21T13:40:33.419932 #3319]  INFO -- : Processing by WelcomeController#vk_auth_callback as HTML
+I, [2015-11-21T13:40:33.419967 #3319]  INFO -- :   Parameters: {"code"=>"daf739d1d50cd7bf1c", "state"=>"6fc0094c1c87a94ed6ab899778874c6e"}
+W, [2015-11-21T13:40:33.712422 #3319]  WARN -- :   MOPED: Retrying connection attempt 1 more time(s), nodes is [], seeds are [<Moped::Node resolved_address="127.0.0.1:27017">], cluster is #<Moped::Cluster:69960186263920 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>. Error backtrace is ["/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/cluster.rb:254:in `with_primary'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/read_preference/primary.rb:55:in `block in with_node'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/retryable.rb:30:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/retryable.rb:30:in `with_retry'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/read_preference/primary.rb:54:in `with_node'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/moped-2.0.7/lib/moped/query.rb:128:in `first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:191:in `block in first_with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:135:in `with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/query_cache.rb:190:in `first_with_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:199:in `block (2 levels) in first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:545:in `with_sorting'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:198:in `block in first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:457:in `try_cache'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual/mongo.rb:197:in `first'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/mongoid-4.0.2/lib/mongoid/contextual.rb:20:in `first'", "/home/egor/RubymineProjects/nsurock/app/models/user.rb:35:in `find_for_vkontakte_oauth'", "/home/egor/RubymineProjects/nsurock/app/controllers/welcome_controller.rb:12:in `vk_auth_callback'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:198:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:88:in `run_callbacks'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:137:in `process'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionview-4.2.3/lib/action_view/rendering.rb:30:in `process'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal.rb:196:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_controller/metal.rb:237:in `block in action'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `dispatch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:45:in `serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:43:in `block in serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `each'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `serve'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:821:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-pjax-0.8.0/lib/rack/pjax.rb:12:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/remotipart-1.2.1/lib/remotipart/middleware.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/flash.rb:260:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/cookies.rb:560:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:84:in `run_callbacks'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'", "/home/egor/.rvm/gems/ruby-2.1.6/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'", "/home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'"]. runtime: n/a
+D, [2015-11-21T13:40:33.963473 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6997ms
+D, [2015-11-21T13:40:33.969656 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"vk_id"=>"id221246142"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 5.9262ms
+D, [2015-11-21T13:40:34.377656 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"email"=>"nsu_topolnyak@vk.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3016ms
+D, [2015-11-21T13:40:34.390785 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 INSERT       database=nsumint_test collection=users documents=[{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000'), "vk_id"=>"id221246142", "vk_screen_name"=>"nsu_topolnyak", "first_name"=>"Егор", "last_name"=>"Топольняк", "vk_photo"=>"http://cs627923.vk.me/v627923142/1d3c/WH834RWzok0.jpg", "token"=>"a241907b87a35b8a0875070bcb3f76a5f99760604e62d316d4d1a273755a1d77c18716bd4e2aac7932475", "email"=>"nsu_topolnyak@vk.com", "encrypted_password"=>"$2a$10$q5CwI15HMH2rAl4JNEJuGOm8eM5uXvfxHhY8e05NqTjy2DxUghVxe", "sign_in_count"=>0, "is_admin"=>false, "reset_password_token"=>nil, "reset_password_sent_at"=>nil}] flags=[]
+D, [2015-11-21T13:40:34.390870 #3319] DEBUG -- :                          COMMAND      database=nsumint_test command={:getlasterror=>1, :w=>1} runtime: 12.5881ms
+D, [2015-11-21T13:40:34.392608 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 UPDATE       database=nsumint_test collection=users selector={"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')} update={"$set"=>{"last_sign_in_at"=>2015-11-21 07:40:34 UTC, "current_sign_in_at"=>2015-11-21 07:40:34 UTC, "last_sign_in_ip"=>"127.0.0.1", "current_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>1}} flags=[]
+D, [2015-11-21T13:40:34.392644 #3319] DEBUG -- :                          COMMAND      database=nsumint_test command={:getlasterror=>1, :w=>1} runtime: 0.3324ms
+I, [2015-11-21T13:40:34.392893 #3319]  INFO -- : Redirected to http://local.vcap.me:3000/
+I, [2015-11-21T13:40:34.392955 #3319]  INFO -- : Completed 302 Found in 973ms
+I, [2015-11-21T13:40:34.402507 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:34 +0600
+I, [2015-11-21T13:40:34.403126 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:34.403178 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:34.406258 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.0960ms
+I, [2015-11-21T13:40:34.407090 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (3.6ms)
+I, [2015-11-21T13:40:34.407544 #3319]  INFO -- : Completed 200 OK in 4ms (Views: 4.2ms)
+I, [2015-11-21T13:40:34.408185 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:34 +0600
+I, [2015-11-21T13:40:34.408839 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:34.408888 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:34.410206 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.2903ms
+D, [2015-11-21T13:40:34.410567 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2412ms
+I, [2015-11-21T13:40:34.411072 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.8ms)
+I, [2015-11-21T13:40:34.411504 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.5ms)
+I, [2015-11-21T13:40:34.412342 #3319]  INFO -- : Started GET "/assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png" for 127.0.0.1 at 2015-11-21 13:40:34 +0600
+I, [2015-11-21T13:40:34.413583 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:34.413677 #3319]  INFO -- :   Parameters: {"path"=>"assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png"}
+D, [2015-11-21T13:40:34.415812 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4013ms
+D, [2015-11-21T13:40:34.416223 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2667ms
+I, [2015-11-21T13:40:34.416631 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.5ms)
+I, [2015-11-21T13:40:34.417137 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 3.2ms)
+I, [2015-11-21T13:40:34.447303 #3319]  INFO -- : Started GET "/assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png" for 127.0.0.1 at 2015-11-21 13:40:34 +0600
+I, [2015-11-21T13:40:34.447793 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:34.447827 #3319]  INFO -- :   Parameters: {"path"=>"assets/logo-big-923d7c72e3a10e553b20abf34f9b94619205b08827f05e6c3d17d48022f4be95.png"}
+D, [2015-11-21T13:40:34.448958 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3144ms
+I, [2015-11-21T13:40:34.449378 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:34.449793 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:34.497126 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:34 +0600
+I, [2015-11-21T13:40:34.498104 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:34.498184 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:34.499410 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3028ms
+I, [2015-11-21T13:40:34.499785 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:34.500158 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:36.661978 #3319]  INFO -- : Started GET "/welcome/auth_by_vk" for 127.0.0.1 at 2015-11-21 13:40:36 +0600
+I, [2015-11-21T13:40:36.662666 #3319]  INFO -- : Processing by WelcomeController#auth_by_vk as HTML
+I, [2015-11-21T13:40:36.663544 #3319]  INFO -- : Redirected to https://oauth.vk.com/authorize?client_id=5152341&redirect_uri=http%3A%2F%2Flocal.vcap.me%3A3000%2Fwelcome%2Fvk_auth_callback&response_type=code&state=80403c331f53d22a79c6fc43514ec566
+I, [2015-11-21T13:40:36.663615 #3319]  INFO -- : Completed 302 Found in 1ms
+I, [2015-11-21T13:40:36.855115 #3319]  INFO -- : Started GET "/welcome/vk_auth_callback?code=3e79d6a18d5680e38f&state=80403c331f53d22a79c6fc43514ec566" for 127.0.0.1 at 2015-11-21 13:40:36 +0600
+I, [2015-11-21T13:40:36.855659 #3319]  INFO -- : Processing by WelcomeController#vk_auth_callback as HTML
+I, [2015-11-21T13:40:36.855751 #3319]  INFO -- :   Parameters: {"code"=>"3e79d6a18d5680e38f", "state"=>"80403c331f53d22a79c6fc43514ec566"}
+D, [2015-11-21T13:40:37.171951 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"vk_id"=>"id221246142"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4807ms
+D, [2015-11-21T13:40:37.172836 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2202ms
+I, [2015-11-21T13:40:37.173144 #3319]  INFO -- : Redirected to http://local.vcap.me:3000/
+I, [2015-11-21T13:40:37.173203 #3319]  INFO -- : Completed 302 Found in 317ms
+I, [2015-11-21T13:40:37.176234 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.176721 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:37.177883 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3417ms
+I, [2015-11-21T13:40:37.178281 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:37.178678 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:37.223844 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.224386 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.224431 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:37.225683 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3332ms
+I, [2015-11-21T13:40:37.226230 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:37.226793 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:37.233204 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.233836 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.233889 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:37.235916 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.2466ms
+I, [2015-11-21T13:40:37.236313 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.1ms)
+I, [2015-11-21T13:40:37.236700 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms)
+I, [2015-11-21T13:40:37.237349 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.237967 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.238034 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:37.239516 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4615ms
+I, [2015-11-21T13:40:37.240100 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.7ms)
+I, [2015-11-21T13:40:37.240493 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:37.241120 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.267736 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.267818 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:37.269193 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3073ms
+D, [2015-11-21T13:40:37.269546 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2349ms
+I, [2015-11-21T13:40:37.269978 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.7ms)
+I, [2015-11-21T13:40:37.270440 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:37.271343 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.271853 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.271966 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:37.273159 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.2480ms
+D, [2015-11-21T13:40:37.273462 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.1949ms
+I, [2015-11-21T13:40:37.273854 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:37.274249 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:37.274902 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.275460 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.275591 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:37.276740 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.2483ms
+D, [2015-11-21T13:40:37.277040 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.1904ms
+I, [2015-11-21T13:40:37.277425 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:37.277827 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:37.303368 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:37 +0600
+I, [2015-11-21T13:40:37.303855 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:37.303892 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:37.304989 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2914ms
+I, [2015-11-21T13:40:37.305615 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:37.306404 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.4ms)
+I, [2015-11-21T13:40:39.178798 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.179611 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:39.181322 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4117ms
+I, [2015-11-21T13:40:39.181904 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.8ms)
+I, [2015-11-21T13:40:39.182505 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms)
+I, [2015-11-21T13:40:39.191434 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.194740 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.197444 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:39.201152 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3854ms
+I, [2015-11-21T13:40:39.201750 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.7ms)
+I, [2015-11-21T13:40:39.202368 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms)
+I, [2015-11-21T13:40:39.203233 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.203867 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.203907 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:39.205270 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3770ms
+I, [2015-11-21T13:40:39.205670 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:39.206046 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:39.206678 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.207259 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.207314 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:39.208616 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3852ms
+I, [2015-11-21T13:40:39.209171 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:39.209629 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:39.210292 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.210930 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.211033 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:39.212602 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4169ms
+I, [2015-11-21T13:40:39.213065 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:39.213497 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:39.214335 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.215372 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.215577 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:39.217036 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3007ms
+I, [2015-11-21T13:40:39.217422 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:39.217805 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:39.218438 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.219036 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.219102 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:39.220872 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7103ms
+I, [2015-11-21T13:40:39.221532 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.1ms)
+I, [2015-11-21T13:40:39.222100 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.8ms)
+I, [2015-11-21T13:40:39.264714 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.265877 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.265950 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:39.267595 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4388ms
+I, [2015-11-21T13:40:39.268185 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.8ms)
+I, [2015-11-21T13:40:39.268792 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms)
+I, [2015-11-21T13:40:39.740480 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.741392 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:39.742893 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3967ms
+I, [2015-11-21T13:40:39.743416 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:39.743961 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:39.752511 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.756275 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.757245 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:39.759406 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.1753ms
+I, [2015-11-21T13:40:39.759814 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.2ms)
+I, [2015-11-21T13:40:39.760209 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.8ms)
+I, [2015-11-21T13:40:39.760870 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.761490 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.761544 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:39.762951 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3590ms
+I, [2015-11-21T13:40:39.763503 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:39.764110 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.4ms)
+I, [2015-11-21T13:40:39.764984 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.765562 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.765604 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:39.766643 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2975ms
+I, [2015-11-21T13:40:39.767025 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.1ms)
+I, [2015-11-21T13:40:39.767401 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:39.767986 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.768477 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.768604 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:39.770074 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3798ms
+I, [2015-11-21T13:40:39.770567 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:39.771020 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:39.771754 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.772532 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.772667 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:39.774323 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5079ms
+I, [2015-11-21T13:40:39.775661 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.5ms)
+I, [2015-11-21T13:40:39.776973 #3319]  INFO -- : Completed 200 OK in 4ms (Views: 4.1ms)
+I, [2015-11-21T13:40:39.777881 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.778566 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.778693 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:39.779799 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2847ms
+I, [2015-11-21T13:40:39.780171 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:39.780539 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:39.830861 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:39 +0600
+I, [2015-11-21T13:40:39.831359 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:39.831402 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:39.832450 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2799ms
+I, [2015-11-21T13:40:39.832839 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.1ms)
+I, [2015-11-21T13:40:39.833221 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:40.025167 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.025898 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.027358 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3489ms
+I, [2015-11-21T13:40:40.027897 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:40.028412 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.3ms)
+I, [2015-11-21T13:40:40.038285 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.039731 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.041384 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.045300 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.2328ms
+I, [2015-11-21T13:40:40.045699 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.2ms)
+I, [2015-11-21T13:40:40.046085 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.8ms)
+I, [2015-11-21T13:40:40.046738 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.047235 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.047304 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:40.048465 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3645ms
+I, [2015-11-21T13:40:40.048929 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:40.049311 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.049937 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.050566 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.050624 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:40.052043 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3956ms
+I, [2015-11-21T13:40:40.052587 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:40.053179 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.4ms)
+I, [2015-11-21T13:40:40.053969 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.054661 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.054868 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.056388 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3275ms
+I, [2015-11-21T13:40:40.056850 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:40.057296 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:40.058039 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.058956 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.059149 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.061340 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3657ms
+I, [2015-11-21T13:40:40.061813 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.0ms)
+I, [2015-11-21T13:40:40.062524 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms)
+I, [2015-11-21T13:40:40.063720 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.064280 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.064328 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.065552 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3793ms
+I, [2015-11-21T13:40:40.065937 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:40.066324 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.9ms)
+I, [2015-11-21T13:40:40.110826 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.111585 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.111674 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:40.113679 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5709ms
+I, [2015-11-21T13:40:40.114240 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.1ms)
+I, [2015-11-21T13:40:40.114647 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms)
+I, [2015-11-21T13:40:40.215402 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.215936 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.217188 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3149ms
+I, [2015-11-21T13:40:40.217590 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:40.217980 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.9ms)
+I, [2015-11-21T13:40:40.264462 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.265219 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.267226 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:40.272572 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 4.2775ms
+I, [2015-11-21T13:40:40.273019 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (5.3ms)
+I, [2015-11-21T13:40:40.273465 #3319]  INFO -- : Completed 200 OK in 6ms (Views: 6.0ms)
+I, [2015-11-21T13:40:40.274135 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.274717 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.274787 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:40.276445 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2767ms
+I, [2015-11-21T13:40:40.276879 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:40.277265 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:40.277842 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.278296 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.278400 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.279441 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2787ms
+I, [2015-11-21T13:40:40.279800 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.1ms)
+I, [2015-11-21T13:40:40.280175 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms)
+I, [2015-11-21T13:40:40.280787 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.281473 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.281526 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.283004 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4059ms
+I, [2015-11-21T13:40:40.283714 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.8ms)
+I, [2015-11-21T13:40:40.284420 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms)
+I, [2015-11-21T13:40:40.285394 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.286171 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.286358 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.288713 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6224ms
+I, [2015-11-21T13:40:40.289167 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.1ms)
+I, [2015-11-21T13:40:40.289578 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.9ms)
+I, [2015-11-21T13:40:40.290239 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.290867 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.290912 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.292290 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4085ms
+I, [2015-11-21T13:40:40.292761 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:40.293187 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.341807 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.342296 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.342331 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:40.343423 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3073ms
+I, [2015-11-21T13:40:40.344007 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:40.344672 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:40.423231 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.423723 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.425220 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3572ms
+I, [2015-11-21T13:40:40.425641 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.426056 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.472045 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.475389 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.476379 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:40.479091 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4035ms
+I, [2015-11-21T13:40:40.479541 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.479988 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:40.480829 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.481463 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.481539 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.482663 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3574ms
+I, [2015-11-21T13:40:40.483053 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.483481 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.484143 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.484918 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.484983 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.486167 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3066ms
+I, [2015-11-21T13:40:40.486551 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.486961 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.487578 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.488238 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.488347 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.489825 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3385ms
+I, [2015-11-21T13:40:40.490313 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:40.490722 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:40.491447 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.492112 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.492201 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.493593 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3376ms
+I, [2015-11-21T13:40:40.494027 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.494442 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:40.495172 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.496056 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.496227 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:40.498008 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4221ms
+I, [2015-11-21T13:40:40.498673 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.9ms)
+I, [2015-11-21T13:40:40.499250 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.8ms)
+I, [2015-11-21T13:40:40.542549 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.543235 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.543293 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:40.544663 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3183ms
+I, [2015-11-21T13:40:40.545128 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.5ms)
+I, [2015-11-21T13:40:40.545548 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.626361 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.626856 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.627995 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2825ms
+I, [2015-11-21T13:40:40.628378 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.628757 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:40.676755 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.677426 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.680654 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.683607 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.0385ms
+I, [2015-11-21T13:40:40.684106 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (3.0ms)
+I, [2015-11-21T13:40:40.684553 #3319]  INFO -- : Completed 200 OK in 4ms (Views: 3.7ms)
+I, [2015-11-21T13:40:40.685253 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.685870 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.685911 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:40.687024 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3258ms
+I, [2015-11-21T13:40:40.687397 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.687752 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:40.688494 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.689493 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.689563 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:40.690998 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3837ms
+I, [2015-11-21T13:40:40.691409 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.691802 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.692414 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.692983 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.693052 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.700446 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6173ms
+I, [2015-11-21T13:40:40.701027 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (7.5ms)
+I, [2015-11-21T13:40:40.701762 #3319]  INFO -- : Completed 200 OK in 9ms (Views: 8.4ms)
+I, [2015-11-21T13:40:40.702378 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.702831 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.702876 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.704042 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3499ms
+I, [2015-11-21T13:40:40.704422 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.704790 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.705385 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.705817 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.705918 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.706968 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2838ms
+I, [2015-11-21T13:40:40.707369 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.1ms)
+I, [2015-11-21T13:40:40.707769 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:40.752240 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.752746 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.752783 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:40.753903 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3171ms
+I, [2015-11-21T13:40:40.754261 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.754627 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2015-11-21T13:40:40.824152 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.824782 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.826088 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3655ms
+I, [2015-11-21T13:40:40.826546 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.826998 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:40.873719 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.875379 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.876689 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.880882 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 3.2335ms
+I, [2015-11-21T13:40:40.881283 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (4.2ms)
+I, [2015-11-21T13:40:40.881689 #3319]  INFO -- : Completed 200 OK in 5ms (Views: 4.7ms)
+I, [2015-11-21T13:40:40.882304 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.882821 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.882883 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:40.883997 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3247ms
+I, [2015-11-21T13:40:40.884395 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.884823 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.885457 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.886030 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.886105 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:40.887415 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3605ms
+I, [2015-11-21T13:40:40.887965 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.888506 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.889213 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.889787 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.889925 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.892184 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5772ms
+I, [2015-11-21T13:40:40.892807 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.5ms)
+I, [2015-11-21T13:40:40.893210 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 3.1ms)
+I, [2015-11-21T13:40:40.893812 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.894404 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.894597 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:40.896116 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3756ms
+I, [2015-11-21T13:40:40.896590 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:40.897036 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.2ms)
+I, [2015-11-21T13:40:40.897725 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.898631 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.898862 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.900941 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3990ms
+I, [2015-11-21T13:40:40.901498 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.0ms)
+I, [2015-11-21T13:40:40.902112 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 3.0ms)
+I, [2015-11-21T13:40:40.941100 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.941600 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.941636 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:40.942737 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3204ms
+I, [2015-11-21T13:40:40.943129 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:40.943527 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:40.977967 #3319]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.978799 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+D, [2015-11-21T13:40:40.980094 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3210ms
+I, [2015-11-21T13:40:40.980625 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.981113 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms)
+I, [2015-11-21T13:40:40.989835 #3319]  INFO -- : Started GET "/assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.990454 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.991576 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-7be574a483608a5e16056facc4bf8237c3a10c403399c81c905bc86108112ceb.css"}
+D, [2015-11-21T13:40:40.996229 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3648ms
+I, [2015-11-21T13:40:40.996651 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.4ms)
+I, [2015-11-21T13:40:40.997085 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 2.0ms)
+I, [2015-11-21T13:40:40.997699 #3319]  INFO -- : Started GET "/assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js" for 127.0.0.1 at 2015-11-21 13:40:40 +0600
+I, [2015-11-21T13:40:40.998151 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:40.998272 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-7b2715be5a501235d1c57db3d4cf3c988bb9b24f71a7d0dcf72528a2f1c6731c.js"}
+D, [2015-11-21T13:40:40.999310 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3029ms
+I, [2015-11-21T13:40:40.999674 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.1ms)
+I, [2015-11-21T13:40:41.000030 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms)
+I, [2015-11-21T13:40:41.000611 #3319]  INFO -- : Started GET "/assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js" for 127.0.0.1 at 2015-11-21 13:40:41 +0600
+I, [2015-11-21T13:40:41.001092 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:41.001202 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-46b82ab1b56e7a83f44c74ee616681123bd43ead568191422487bacd543aeec9.js"}
+D, [2015-11-21T13:40:41.002307 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3108ms
+I, [2015-11-21T13:40:41.002704 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.2ms)
+I, [2015-11-21T13:40:41.003094 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.8ms)
+I, [2015-11-21T13:40:41.003725 #3319]  INFO -- : Started GET "/assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:41 +0600
+I, [2015-11-21T13:40:41.004253 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:41.004337 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/vendor-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:41.006314 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4151ms
+I, [2015-11-21T13:40:41.006763 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.9ms)
+I, [2015-11-21T13:40:41.007179 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms)
+I, [2015-11-21T13:40:41.007919 #3319]  INFO -- : Started GET "/assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2015-11-21 13:40:41 +0600
+I, [2015-11-21T13:40:41.008679 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:41.008846 #3319]  INFO -- :   Parameters: {"path"=>"assets/frontend/frontend-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"}
+D, [2015-11-21T13:40:41.010935 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6025ms
+I, [2015-11-21T13:40:41.011436 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (2.1ms)
+I, [2015-11-21T13:40:41.011928 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.9ms)
+I, [2015-11-21T13:40:41.012690 #3319]  INFO -- : Started GET "/assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js" for 127.0.0.1 at 2015-11-21 13:40:41 +0600
+I, [2015-11-21T13:40:41.013477 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:41.013703 #3319]  INFO -- :   Parameters: {"path"=>"assets/application-6162b0afb23644729d66f6a4e118dbc0298dd38b730ee0b1f01cd6b36d4fe8e0.js"}
+D, [2015-11-21T13:40:41.015049 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.2996ms
+I, [2015-11-21T13:40:41.015446 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.3ms)
+I, [2015-11-21T13:40:41.015827 #3319]  INFO -- : Completed 200 OK in 2ms (Views: 1.9ms)
+I, [2015-11-21T13:40:41.075911 #3319]  INFO -- : Started GET "/assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico" for 127.0.0.1 at 2015-11-21 13:40:41 +0600
+I, [2015-11-21T13:40:41.076576 #3319]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-11-21T13:40:41.076639 #3319]  INFO -- :   Parameters: {"path"=>"assets/favicon-372d216fc9e8a7275aaaf5ac94217ea2c0f72f9fcc695cd9c2fdc702e7d12dda.ico"}
+D, [2015-11-21T13:40:41.078069 #3319] DEBUG -- :   MOPED: 127.0.0.1:27017 QUERY        database=nsumint_test collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('56501ff2d3054d0cf7000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3698ms
+I, [2015-11-21T13:40:41.078675 #3319]  INFO -- :   Rendered welcome/index.html.slim within layouts/application (1.6ms)
+I, [2015-11-21T13:40:41.079286 #3319]  INFO -- : Completed 200 OK in 3ms (Views: 2.5ms)

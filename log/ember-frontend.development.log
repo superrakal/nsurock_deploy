@@ -4722,3 +4722,26 @@ Babel (5)                                     | 43ms (8 ms)
 TreeMerger (appAndDependencies) (1)           | 42ms                
 Concat: App (1)                               | 32ms                
 
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilt project successfully. Stored in "/home/egor/RubymineProjects/nsurock/tmp/ember-cli-647b0817-ea77-4b07-b6ad-a96674df1e25/apps/frontend".
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...Building...
+
+Build successful - 2798ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1796ms              
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1796ms              
+CoffeeScriptFilter (2)                        | 216ms (108 ms)      
+Babel (5)                                     | 148ms (29 ms)       
+
