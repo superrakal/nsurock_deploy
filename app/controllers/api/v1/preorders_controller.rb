@@ -24,17 +24,17 @@ module Api
         @preorder = Preorder.find params[:id]
         @preorder.status = 'Изготовляется'
         if @preorder.save
-          @will_destroyed_preorders = Preorder.where(user: current_user, status: 'Создан')
-          @will_destroyed_preorders.each do |preorder|
-            preorder.destroy
-          end
-          puts @preorder.new_preorder_message
+          logger.info @preorder.new_preorder_message
           vk_send_message(@preorder.new_preorder_message)
           respond_with @preorder, status: 200
         end
       end
 
       def create
+        @will_destroyed_preorders = Preorder.where(user: current_user, status: 'Создан')
+        @will_destroyed_preorders.each do |preorder|
+          preorder.destroy
+        end
         @preorder = Preorder.new preorder_params
         @preorder.user = current_user
         if @preorder.save

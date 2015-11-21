@@ -4993,3 +4993,82 @@ Babel (5)                                     | 39ms (7 ms)
 Concat: App (1)                               | 36ms                
 CoffeeScriptFilter (2)                        | 29ms (14 ms)        
 
+file added models/queue.coffee
+file changed models/queue.coffee
+file added unit/models/queue-test.coffee
+file changed unit/models/queue-test.coffee
+
+Build successful - 564ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 121ms               
+Funnel: App JS Files                          | 96ms                
+TreeMerger (appAndDependencies)               | 35ms                
+Concat: Test Support JS                       | 28ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 121ms               
+Funnel: App JS Files (1)                      | 96ms                
+SourcemapConcat (3)                           | 48ms (16 ms)        
+Babel (5)                                     | 45ms (9 ms)         
+TreeMerger (appAndDependencies) (1)           | 35ms                
+Concat: Test Support JS (1)                   | 28ms                
+
+file added routes/queue.coffee
+file added templates/queue.hbs
+file changed routes/queue.coffee
+file changed templates/queue.hbs
+file changed router.coffee
+file added unit/routes/queue-test.coffee
+file changed unit/routes/queue-test.coffee
+
+Build successful - 599ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 168ms               
+Funnel: App JS Files                          | 47ms                
+TreeMerger (appAndDependencies)               | 44ms                
+Concat: Test Support JS                       | 37ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 168ms               
+SourcemapConcat (3)                           | 48ms (16 ms)        
+Funnel: App JS Files (1)                      | 47ms                
+TreeMerger (appAndDependencies) (1)           | 44ms                
+Babel (5)                                     | 39ms (7 ms)         
+Concat: Test Support JS (1)                   | 37ms                
+
+file deleted templates/queue.hbs
+file added templates/queue.emblem
+File: frontend/templates/queue.emblem (1)
+Expected _4BeginStatement or end of input but "{" found.
+file deleted models/queue.coffee
+File: frontend/templates/queue.emblem (1)
+Expected _4BeginStatement or end of input but "{" found.
+file changed router.coffee
+File: frontend/templates/queue.emblem (1)
+Expected _4BeginStatement or end of input but "{" found.
+file changed router.coffee
+file changed templates/queue.emblem
+
+Build successful - 665ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 204ms               
+TreeMerger (appAndDependencies)               | 55ms                
+Funnel: App JS Files                          | 47ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 204ms               
+TreeMerger (appAndDependencies) (1)           | 55ms                
+SourcemapConcat (3)                           | 48ms (16 ms)        
+Funnel: App JS Files (1)                      | 47ms                
+Babel (5)                                     | 47ms (9 ms)         
+TreeMerger (150)                              | 40ms (0 ms)         
+
