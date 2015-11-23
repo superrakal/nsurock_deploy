@@ -6,7 +6,7 @@ ConfirmController = Ember.Controller.extend
 
   init: ->
     @_super.apply(this, arguments)
-    @socket = this.get('socketIOService').socketFor('http://localhost:6969/')
+    @socket = this.get('socketIOService').socketFor('http://nsurock.ru:6969/')
 
   actions:
     confirm: ->

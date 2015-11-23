@@ -11,7 +11,7 @@ QueueController = Ember.Controller.extend
       ]
       path: '/sounds/'
       preload: true
-    @socket = this.get('socketIOService').socketFor('http://localhost:6969/')
+    @socket = this.get('socketIOService').socketFor('http://nsurock.ru:6969/')
     @socket.on 'update preorders list', =>
       ion.sound.play("bell_ring")
       @send("socket_event")
