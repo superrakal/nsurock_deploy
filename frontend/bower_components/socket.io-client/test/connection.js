@@ -4,15 +4,21 @@ var hasCORS = require('has-cors');
 var textBlobBuilder = require('text-blob-builder');
 
 describe('connection', function() {
-  this.timeout(20000);
+  this.timeout(70000);
 
-  it('should connect to nsumint.ru', function(done) {
+  it('should connect to localhost', function(done) {
     var socket = io({ forceNew: true });
     socket.emit('hi');
     socket.on('hi', function(data){
       socket.disconnect();
       done();
     });
+  });
+
+  it('should not connect when autoConnect option set to false', function() {
+    var socket = io({ forceNew: true, autoConnect: false });
+    expect(socket.io.engine).to.not.be.ok();
+    socket.disconnect();
   });
 
   it('should work with acks', function(done){
@@ -76,6 +82,22 @@ describe('connection', function() {
       foo.on('connect', function(){
         foo.close();
         socket.close();
+        manager.close();
+        done();
+      });
+    });
+  });
+
+  it('should open a new namespace after connection gets closed', function(done){
+    var manager = io.Manager();
+    var socket = manager.socket('/');
+    socket.on('connect', function() {
+      socket.disconnect();
+    }).on('disconnect', function() {
+      var foo = manager.socket('/foo');
+      foo.on('connect', function() {
+        foo.disconnect();
+        manager.close();
         done();
       });
     });
@@ -93,6 +115,82 @@ describe('connection', function() {
     }, 500);
   });
 
+  it('should reconnect manually', function(done) {
+    var socket = io({ forceNew: true });
+    socket.once('connect', function() {
+      socket.disconnect();
+    }).once('disconnect', function() {
+      socket.once('connect', function() {
+        socket.disconnect();
+        done();
+      });
+      socket.connect();
+    });
+  });
+
+  it('should reconnect automatically after reconnecting manually', function(done){
+    var socket = io({ forceNew: true });
+    socket.once('connect', function() {
+      socket.disconnect();
+    }).once('disconnect', function() {
+      socket.on('reconnect', function() {
+        socket.disconnect();
+        done();
+      });
+      socket.connect();
+      setTimeout(function() {
+        socket.io.engine.close();
+      }, 500);
+    });
+  });
+
+  it('should attempt reconnects after a failed reconnect', function(done){
+    var manager = io.Manager({ reconnection: true, timeout: 0, reconnectionAttempts: 2, reconnectionDelay: 10 });
+    var socket = manager.socket('/timeout');
+    socket.once('reconnect_failed', function() {
+      var reconnects = 0;
+      var reconnectCb = function() {
+        reconnects++;
+      };
+
+      manager.on('reconnect_attempt', reconnectCb);
+      manager.on('reconnect_failed', function failed() {
+        expect(reconnects).to.be(2);
+        socket.close();
+        manager.close();
+        done();
+      });
+      socket.connect();
+    });
+  });
+
+  it('reconnect delay should increase every time', function(done){
+    var manager = io.Manager({ reconnection: true, timeout: 0, reconnectionAttempts: 5, reconnectionDelay: 10, randomizationFactor: 0.2 });
+    var socket = manager.socket('/timeout');
+    var reconnects = 0, increasingDelay = true, startTime, prevDelay = 0;
+    
+    socket.on('connect_error', function() {
+      startTime = new Date().getTime();
+    });
+    socket.on('reconnect_attempt', function() {
+      reconnects++;
+      var currentTime = new Date().getTime();
+      var delay = currentTime - startTime;
+      if (delay <= prevDelay) {
+        increasingDelay = false;
+      }
+      prevDelay = delay;
+    });
+
+    socket.on('reconnect_failed', function failed() {
+      expect(reconnects).to.be(5);
+      expect(increasingDelay).to.be.ok();
+      socket.close();
+      manager.close();
+      done();
+    });
+  });
+
   it('reconnect event should fire in socket', function(done){
     var socket = io({ forceNew: true });
 
@@ -104,6 +202,58 @@ describe('connection', function() {
     setTimeout(function() {
       socket.io.engine.close();
     }, 500);
+  });
+
+  it('should not reconnect when force closed', function(done){
+    var socket = io('/invalid', { forceNew: true, timeout: 0, reconnectionDelay: 10 });
+    socket.on('connect_error', function() {
+      socket.on('reconnect_attempt', function() {
+        expect().fail();
+      });
+      socket.disconnect();
+      // set a timeout to let reconnection possibly fire
+      setTimeout(function() {
+        done();
+      }, 500);
+    });
+  });
+
+  it('should stop reconnecting when force closed', function(done){
+    var socket = io('/invalid', { forceNew: true, timeout: 0, reconnectionDelay: 10 });
+    socket.once('reconnect_attempt', function() {
+      socket.on('reconnect_attempt', function() {
+        expect().fail();
+      });
+      socket.disconnect();
+      // set a timeout to let reconnection possibly fire
+      setTimeout(function() {
+        done();
+      }, 500);
+    });
+  });
+
+  it('should stop reconnecting on a socket and keep to reconnect on another', function(done){
+    var manager = io.Manager();
+    var socket1 = manager.socket('/');
+    var socket2 = manager.socket('/asd');
+
+    manager.on('reconnect_attempt', function() {
+      socket1.on('connect', function() {
+        expect().fail();
+      });
+      socket2.on('connect', function() {
+        setTimeout(function() {
+          socket2.disconnect();
+          manager.disconnect();
+          done();
+        }, 500);
+      });
+      socket1.disconnect();
+    });
+
+    setTimeout(function() {
+      manager.engine.close();
+    }, 1000);
   });
 
   it('should try to reconnect twice and fail when requested two attempts with immediate timeout and reconnect enabled', function(done) {
@@ -119,6 +269,7 @@ describe('connection', function() {
     manager.on('reconnect_failed', function failed() {
       expect(reconnects).to.be(2);
       socket.close();
+      manager.close();
       done();
     });
 
@@ -139,6 +290,7 @@ describe('connection', function() {
     socket.on('reconnect_failed', function failed() {
       expect(reconnects).to.be(2);
       socket.close();
+      manager.close();
       done();
     });
   });
@@ -150,6 +302,7 @@ describe('connection', function() {
     socket.on('error', function(data) {
       expect(data.code).to.be('test');
       socket.close();
+      manager.close();
       done();
     });
 
@@ -172,6 +325,7 @@ describe('connection', function() {
     socket.on('reconnect_failed', function failed() {
       expect(reconnects).to.be(2);
       socket.close();
+      manager.close();
       done();
     });
   });
@@ -189,6 +343,7 @@ describe('connection', function() {
       // set a timeout to let reconnection possibly fire
       setTimeout(function() {
         socket.close();
+        manager.close();
         done();
       }, 1000);
     });
@@ -198,7 +353,7 @@ describe('connection', function() {
   // `script.onerror` (see: http://requirejs.org/docs/api.html#ieloadfail)
   if (!global.document || hasCORS) {
     it('should try to reconnect twice and fail when requested two attempts with incorrect address and reconnect enabled', function(done) {
-      var manager = io.Manager('http://nsumint.ru:3940', { reconnection: true, reconnectionAttempts: 2, reconnectionDelay: 10 });
+      var manager = io.Manager('http://localhost:3940', { reconnection: true, reconnectionAttempts: 2, reconnectionDelay: 10 });
       var socket = manager.socket('/asd');
       var reconnects = 0;
       var cb = function() {
@@ -210,12 +365,13 @@ describe('connection', function() {
       manager.on('reconnect_failed', function() {
         expect(reconnects).to.be(2);
         socket.disconnect();
+        manager.close();
         done();
       });
     });
 
     it('should not try to reconnect with incorrect port when reconnection disabled', function(done) {
-      var manager = io.Manager('http://nsumint.ru:9823', { reconnection: false });
+      var manager = io.Manager('http://localhost:9823', { reconnection: false });
       var cb = function() {
         socket.close();
         expect().fail();
@@ -226,6 +382,7 @@ describe('connection', function() {
         // set a timeout to let reconnection possibly fire
         setTimeout(function() {
           socket.disconnect();
+          manager.close();
           done();
         }, 1000);
       });
@@ -237,6 +394,7 @@ describe('connection', function() {
   it('should emit date as string', function(done){
     var socket = io({ forceNew: true });
     socket.on('takeDate', function(data) {
+      socket.close();
       expect(data).to.be.a('string');
       done();
     });
@@ -246,6 +404,7 @@ describe('connection', function() {
   it('should emit date in object', function(done){
     var socket = io({ forceNew: true });
     socket.on('takeDateObj', function(data) {
+      socket.close();
       expect(data).to.be.an('object');
       expect(data.date).to.be.a('string');
       done();
@@ -285,7 +444,7 @@ describe('connection', function() {
         socket.disconnect();
         done();
       });
-      var buf = base64.decode("asdfasdf");
+      var buf = base64.decode('asdfasdf');
       socket.emit('buffa', buf);
     });
 
@@ -295,7 +454,7 @@ describe('connection', function() {
         socket.disconnect();
         done();
       });
-      var buf = base64.decode("howdy");
+      var buf = base64.decode('howdy');
       socket.emit('jsonbuff', {hello: 'lol', message: buf, goodbye: 'gotcha'});
     });
 
@@ -305,7 +464,7 @@ describe('connection', function() {
         socket.disconnect();
         done();
       });
-      var buf = base64.decode("abuff1");
+      var buf = base64.decode('abuff1');
       socket.emit('abuff1', buf);
       socket.emit('abuff2', 'please arrive second');
     });

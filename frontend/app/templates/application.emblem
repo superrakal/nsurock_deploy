@@ -16,6 +16,10 @@ nav.navbar.navbar-default.navbar-fixed-top
         = currentUser.last_name
       p.navbar-text.navbar-right.hidden-xs
         cart-component preorder=preorder
+      p.navbar-text.navbar-right
+        = link-to 'queue'
+          i.fa.fa-share-alt
+          |&nbsp;Очередь заказов
 = outlet
 profile-modal
 cart-modal preorder=preorder confirm='confirm'

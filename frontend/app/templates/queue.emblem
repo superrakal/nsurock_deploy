@@ -1,0 +1,31 @@
+.home
+  .container.text-center
+    h1.text-center Очередь заказов
+    .preorders
+      = each model as |preorder|
+        .container-fluid
+          .preorder-title
+            .pull-left
+              i.fa.fa-clock-o
+              |&nbsp;
+              = preorder.formatted_created_at
+            .pull-right
+              |Номер заказа #
+              = preorder.number
+            .clearfix
+          .preorder-additional
+            .avatar.pull-left
+              img src=preorder.user.vk_photo
+            .user-info.pull-left
+              p
+                |&nbsp;
+                = preorder.user.first_name
+                |&nbsp;
+                = preorder.user.last_name
+            .actions.pull-right
+              .done.action
+                i.fa.fa-check
+              .failed.action
+                i.fa.fa-times
+            .clearfix
+          .clearfix

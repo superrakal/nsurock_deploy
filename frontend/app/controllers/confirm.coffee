@@ -2,6 +2,11 @@
 
 ConfirmController = Ember.Controller.extend
   isConfirming: false
+  socketIOService: Ember.inject.service('socket-io')
+
+  init: ->
+    @_super.apply(this, arguments)
+    @socket = this.get('socketIOService').socketFor('http://localhost:6969/')
 
   actions:
     confirm: ->
@@ -16,6 +21,7 @@ ConfirmController = Ember.Controller.extend
           success: =>
             cookie.remove('preorder_id')
             $('#confirmed').modal('show')
+            @socket.emit('preorder added')
 
 
 

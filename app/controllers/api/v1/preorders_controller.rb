@@ -5,7 +5,7 @@ module Api
       respond_to :json
 
       def index
-        @preorders = Preorder.all
+        @preorders = Preorder.where(:status => 'Изготовляется').desc(:created_at)
         respond_with @preorders
       end
 
@@ -25,7 +25,6 @@ module Api
         @preorder = Preorder.find params[:id]
         @preorder.status = 'Изготовляется'
         if @preorder.save
-          logger.info @preorder.new_preorder_message
           vk_send_message(@preorder.new_preorder_message)
           respond_with @preorder, status: 200
         end

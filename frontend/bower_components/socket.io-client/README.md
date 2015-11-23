@@ -1,8 +1,9 @@
 
 # socket.io-client
 
-[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.png)](http://travis-ci.org/Automattic/socket.io-client)
-[![NPM version](https://badge.fury.io/js/socket.io-client.png)](http://badge.fury.io/js/socket.io-client)
+[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.svg)](http://travis-ci.org/Automattic/socket.io-client)
+![NPM version](https://badge.fury.io/js/socket.io-client.svg)
+![Downloads](http://img.shields.io/npm/dm/socket.io-client.svg?style=flat)
 
 ## How to use
 
@@ -13,11 +14,10 @@ serve the file `socket.io.js` found at the root of this repository.
 ```html
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  var socket = io('http://nsumint.ru');
-  socket.on('connect', function(){
-    socket.on('event', function(data){});
-    socket.on('disconnect', function(){});
-  });
+  var socket = io('http://localhost');
+  socket.on('connect', function(){});
+  socket.on('event', function(data){});
+  socket.on('disconnect', function(){});
 </script>
 ```
 
@@ -28,11 +28,10 @@ Socket.IO is compatible with [browserify](http://browserify.org/).
   Add `socket.io-client` to your `package.json` and then:
 
   ```js
-  var socket = require('socket.io-client')('http://nsumint.ru');
-  socket.on('connect', function(){
-    socket.on('event', function(data){});
-    socket.on('disconnect', function(){});
-  });
+  var socket = require('socket.io-client')('http://localhost');
+  socket.on('connect', function(){});
+  socket.on('event', function(data){});
+  socket.on('disconnect', function(){});
   ```
 
 ## API
@@ -51,8 +50,8 @@ Socket.IO is compatible with [browserify](http://browserify.org/).
 
   A `Socket` instance is returned for the namespace specified by the
   pathname in the URL, defaulting to `/`. For example, if the `url` is
-  `http://nsumint.ru/users`, a transport connection will be established to
-  `http://nsumint.ru` and a Socket.IO connection will be established to
+  `http://localhost/users`, a transport connection will be established to
+  `http://localhost` and a Socket.IO connection will be established to
   `/users`.
 
 ### IO#protocol
@@ -82,13 +81,18 @@ Socket.IO is compatible with [browserify](http://browserify.org/).
 
   Options:
   - `reconnection` whether to reconnect automatically (`true`)
-  - `reconnectionDelay` how long to wait before attempting a new
-    reconnection (`1000`)
+  - `reconnectionAttempts` (`Infinity`) before giving up
+  - `reconnectionDelay` how long to initially wait before attempting a new
+    reconnection (`1000`). Affected by +/- `randomizationFactor`,
+    for example the default initial delay will be between 500 to 1500ms.
   - `reconnectionDelayMax` maximum amount of time to wait between
-    reconnections (`5000`). Each attempt increases the reconnection by
-    the amount specified by `reconnectionDelay`.
+    reconnections (`5000`). Each attempt increases the reconnection delay by 2x
+    along with a randomization as above
+  - `randomizationFactor(`0.5`), 0 <= randomizationFactor <= 1
   - `timeout` connection timeout before a `connect_error`
     and `connect_timeout` events are emitted (`20000`)
+  - `autoConnect` by setting this false, you have to call `manager.open`
+    whenever you decide it's appropriate
 
 #### Events
 
@@ -139,9 +143,15 @@ reconnect that depend on this `Manager`.
 
 ### Socket
 
+#### Socket#id:String
+
+A property on the `socket` instance that is equal to the underlying engine.io socket id.
+
+The property is present once the socket has connected, is removed when the socket disconnects and is updated if the socket reconnects.
+
 #### Events
 
-  - `connect`. Fired upon connecting.
+  - `connect`. Fired upon a connection including a successful reconnection.
   - `error`. Fired upon a connection error
     Parameters:
       - `Object` error data
@@ -160,4 +170,4 @@ reconnect that depend on this `Manager`.
 
 ## License
 
-MIT
+[MIT](/LICENSE)

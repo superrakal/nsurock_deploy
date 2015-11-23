@@ -18,4 +18,10 @@ ApplicationRoute = Ember.Route.extend
     controller.set 'currentUser', @get 'session.currentUser'
     controller.set 'preorder', model
 
+  actions:
+    error: ->
+      cookie.remove('preorder_id')
+      location.replace('/')
+
+
 `export default ApplicationRoute`
