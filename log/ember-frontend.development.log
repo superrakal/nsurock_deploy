@@ -7110,3 +7110,30 @@ TreeMerger (appAndDependencies) (1)           | 41ms
 ES6: App Tree (1)                             | 40ms                
 Concat: Test Support JS (1)                   | 38ms                
 
+file added controllers/confirm.coffee___jb_bak___
+file deleted controllers/confirm.coffee___jb_bak___
+file changed controllers/confirm.coffee
+file added controllers/queue.coffee___jb_bak___
+file deleted controllers/queue.coffee___jb_bak___
+file changed controllers/queue.coffee
+
+Build successful - 914ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 227ms               
+Funnel: App JS Files                          | 91ms                
+Babel                                         | 74ms                
+TreeMerger (appAndDependencies)               | 67ms                
+Concat: Test Support JS                       | 65ms                
+SourcemapConcat                               | 56ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 227ms               
+Babel (5)                                     | 101ms (20 ms)       
+SourcemapConcat (3)                           | 94ms (31 ms)        
+Funnel: App JS Files (1)                      | 91ms                
+TreeMerger (appAndDependencies) (1)           | 67ms                
+Concat: Test Support JS (1)                   | 65ms                
+
