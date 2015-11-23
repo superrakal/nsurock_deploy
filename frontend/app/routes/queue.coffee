@@ -12,6 +12,7 @@ QueueRoute = Ember.Route.extend
     @store.find('preorder')
 
   setupController: (controller, model) ->
+    controller.set 'currentUser', @get 'session.currentUser'
     controller.set 'model', model.filterBy('status', 'Изготовляется')
 
   actions:

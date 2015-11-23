@@ -60,7 +60,7 @@ class Preorder
       message = message+"Закуски: "
       self.food_preorders.each do |food_preorder|
         food = food_preorder.food.name.gsub!(/ /," ").to_s
-        message = message+"--"+food+";<br>"
+        message = message+"--"+food+";\n"
         message = message+"----Тип хлеба: "+food_preorder.bread_type.to_s+"\n"
         if food_preorder.sauce.present?
           message = message+"----Соус: "+food_preorder.sauce.to_s

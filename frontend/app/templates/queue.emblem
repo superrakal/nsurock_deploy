@@ -22,15 +22,11 @@
                 = preorder.user.first_name
                 |&nbsp;
                 = preorder.user.last_name
-            .actions.pull-right
-              .done.action
-                i.fa.fa-check
-              .failed.action
-                i.fa.fa-times
+            = if currentUser.is_admin
+              .actions.pull-right
+                .done.action{action 'done' preorder}
+                  i.fa.fa-check
+                .failed.action{action 'ban' preorder}
+                  i.fa.fa-times
             .clearfix
-          .preorder-info
-            = if preorder.drink_preorders.length
-            h3 Напитки
-            = each preorder.drink_preorders as |drink_preorder|
-              |ewrewewr
           .clearfix
