@@ -28,4 +28,9 @@
               .failed.action
                 i.fa.fa-times
             .clearfix
+          .preorder-info
+            = if preorder.drink_preorders.length
+            h3 Напитки
+            = each preorder.drink_preorders as |drink_preorder|
+              |ewrewewr
           .clearfix

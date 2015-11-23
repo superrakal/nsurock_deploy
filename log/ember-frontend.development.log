@@ -7011,3 +7011,102 @@ Concat: Vendor (1)                            | 1795ms
 CoffeeScriptFilter (2)                        | 212ms (106 ms)      
 Babel (5)                                     | 147ms (29 ms)       
 
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...Building...
+
+Build successful - 3044ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1827ms              
+CoffeeScriptFilter                            | 163ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1827ms              
+CoffeeScriptFilter (2)                        | 267ms (133 ms)      
+Babel (5)                                     | 186ms (37 ms)       
+
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding...
+
+Build successful - 3631ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1967ms              
+Babel                                         | 311ms               
+Babel                                         | 263ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1967ms              
+Babel (5)                                     | 745ms (149 ms)      
+CoffeeScriptFilter (2)                        | 207ms (103 ms)      
+
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...Building...
+
+Build successful - 3001ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1935ms              
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1935ms              
+CoffeeScriptFilter (2)                        | 228ms (114 ms)      
+Babel (5)                                     | 159ms (31 ms)       
+
+file changed templates/application.emblem
+
+Build successful - 984ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 316ms               
+Funnel: App JS Files                          | 101ms               
+TreeMerger (appAndDependencies)               | 66ms                
+ES6: App Tree                                 | 49ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 316ms               
+Funnel: App JS Files (1)                      | 101ms               
+SourcemapConcat (3)                           | 80ms (26 ms)        
+TreeMerger (appAndDependencies) (1)           | 66ms                
+Babel (5)                                     | 53ms (10 ms)        
+ES6: App Tree (1)                             | 49ms                
+
+file changed templates/application.emblem
+
+Build successful - 696ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 196ms               
+SourcemapConcat                               | 57ms                
+Funnel: App JS Files                          | 56ms                
+TreeMerger (appAndDependencies)               | 41ms                
+ES6: App Tree                                 | 40ms                
+Concat: Test Support JS                       | 38ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 196ms               
+SourcemapConcat (3)                           | 94ms (31 ms)        
+Funnel: App JS Files (1)                      | 56ms                
+TreeMerger (appAndDependencies) (1)           | 41ms                
+ES6: App Tree (1)                             | 40ms                
+Concat: Test Support JS (1)                   | 38ms                
+

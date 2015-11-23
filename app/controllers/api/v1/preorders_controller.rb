@@ -14,14 +14,14 @@ module Api
         respond_with @preorder
       end
 
-
       def new
         @preorder = Preorder.find params[:id]
         @preorder.status = 'Изготовляется'
         if @preorder.save
-          message = MainsmsApi::Message.new(message: @preorder.new_preorder_message, recipients: ['89139105465'])
-          message.deliver
+          TelegramBotWorker.new.perform_async(@preorder.new_preorder_message)
           respond_with @preorder, status: 200
+        else
+          respond_with @preorder, status: :unprocessable_entity
         end
       end
 

@@ -26,7 +26,9 @@ gem 'rails_admin', '~> 0.6.8'
 #Auth
 gem 'devise'
 gem 'vkontakte_api', '~> 1.4'
-gem 'mainsms_api'
+gem 'sidekiq'
+gem 'telegram-bot-ruby'
+gem 'redis'
 
 #Ember
 gem 'active_model_serializers'
