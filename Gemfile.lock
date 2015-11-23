@@ -30,6 +30,9 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_attr (0.8.5)
+      activemodel (>= 3.0.2, < 5.0)
+      activesupport (>= 3.0.2, < 5.0)
     active_model_serializers (0.9.3)
       activemodel (>= 3.2)
     activejob (4.2.3)
@@ -176,6 +179,9 @@ GEM
       hpricot
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.3.2)
       activesupport (>= 3.0.0, < 5)
@@ -198,6 +204,12 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mainsms_api (0.0.8)
+      active_attr
+      activesupport
+      hashie
+      httparty
+      signed_parameters
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.3)
@@ -341,6 +353,8 @@ GEM
       connection_pool (~> 2.2, >= 2.2.0)
       json (~> 1.0)
       redis (~> 3.2, >= 3.2.1)
+    signed_parameters (0.0.4)
+      activesupport (>= 2.2.1)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -424,6 +438,7 @@ DEPENDENCIES
   html2slim
   jbuilder (~> 2.0)
   jquery-rails
+  mainsms_api
   mongoid (~> 4.0.0)
   mongoid-autoinc
   mongoid-paperclip
@@ -448,3 +463,6 @@ DEPENDENCIES
   unicorn (~> 4.9.0)
   unicorn_service (~> 0.5.1)
   vkontakte_api (~> 1.4)
+
+BUNDLED WITH
+   1.10.5

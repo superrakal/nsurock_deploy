@@ -30,52 +30,52 @@ class Preorder
   end
   
   def new_preorder_message
-    message = "Новый+заказ!<br>Номер+заказа:+#{self.number}<br>Заказчик:+#{self.user.first_name}+#{self.user.last_name}<br><br>"
+    message = "Новый заказ! Номер заказа: #{self.number}. Заказчик: #{self.user.first_name} #{self.user.last_name}\n\n"
     if self.drink_preorders.count > 0
-      message = message+"Напитки:<br>"
+      message = message+"Напитки:\n"
       self.drink_preorders.each do |drink_preorder|
-        с_drink = drink_preorder.drink.name.gsub!(/ /,"+").to_s
+        с_drink = drink_preorder.drink.name.gsub!(/ /," ").to_s
         if с_drink.length > 0
           drink=с_drink
         else
           drink = drink_preorder.drink.name
         end
-        message = message+"--"+drink+";<br>"
+        message = message+"--"+drink+";\n"
         if drink_preorder.syurups.count > 0
-          message = message+"----Сиропы:+"
+          message = message+"----Сиропы: "
           drink_preorder.syurups.each do |syurup|
-            c_syurup = syurup.name.gsub!(/ /,"+").to_s
+            c_syurup = syurup.name.gsub!(/ /," ").to_s
             if c_syurup.length > 0
               syurup=c_syurup
             else
               syurup = syurup.name
             end
-            message = message+syurup+";+"
+            message = message+syurup+"; "
           end
         end
-        message = message+"<br><br>"
+        message = message+"\n\n"
       end
     end
     if self.food_preorders.count > 0
-      message = message+"Закуски:<br>"
+      message = message+"Закуски: "
       self.food_preorders.each do |food_preorder|
-        food = food_preorder.food.name.gsub!(/ /,"+").to_s
+        food = food_preorder.food.name.gsub!(/ /," ").to_s
         message = message+"--"+food+";<br>"
-        message = message+"----Тип+хлеба:+"+food_preorder.bread_type.to_s+"<br>"
+        message = message+"----Тип хлеба: "+food_preorder.bread_type.to_s+"\n"
         if food_preorder.sauce.present?
-          message = message+"----Соус:+"+food_preorder.sauce.to_s
+          message = message+"----Соус: "+food_preorder.sauce.to_s
         end
-        message = message+"<br><br>"
+        message = message+"\n\n"
       end
     end
     if self.comments.present?
-      comments = self.comments.gsub!(/ /,"+").to_s
+      comments = self.comments.gsub!(/ /," ").to_s
       if comments.length == 0
         comments = self.comments.to_s
       end
-      message = message + "Коментарии+к+заказу:+"+comments+"<br><br>"
+      message = message + "Коментарии к заказу: "+comments+"\n\n"
     end
-    message = message+"К+оплате:+"+self.total_price.to_s+"+руб."
+    message = message+"К оплате: "+self.total_price.to_s+" руб."
     return message
   end
 

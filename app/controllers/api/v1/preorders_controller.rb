@@ -14,18 +14,13 @@ module Api
         respond_with @preorder
       end
 
-      def vk_send_message(message)
-        http = Net::HTTP.new("api.vkontakte.ru", 443)
-        http.use_ssl = true
-        request = http.request(Net::HTTP::Get.new("/method/messages.send?domain=nsu_topolnyak&message=#{message}&access_token=5e0c5cc8543a5dbecc47126eb0c0db8bac81875cce6ac4ec78c5dd90df41cda0300e600e9b6b1e482d43b"))
-        logger.info request.body
-      end
 
       def new
         @preorder = Preorder.find params[:id]
         @preorder.status = 'Изготовляется'
         if @preorder.save
-          vk_send_message(@preorder.new_preorder_message)
+          message = MainsmsApi::Message.new(message: @preorder.new_preorder_message, recipients: ['89139105465'])
+          message.deliver
           respond_with @preorder, status: 200
         end
       end

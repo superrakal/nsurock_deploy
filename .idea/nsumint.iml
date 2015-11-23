@@ -184,6 +184,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.3, RVM: ruby-2.1.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_attr (v0.8.5, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_model_serializers (v0.9.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v4.2.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.2.3, RVM: ruby-2.1.6) [gem]" level="application" />
@@ -244,6 +245,7 @@
     <orderEntry type="library" scope="PROVIDED" name="hpricot (v0.8.6, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="html2slim (v0.2.0, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.2, RVM: ruby-2.1.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.7, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.3.2, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.0.5, RVM: ruby-2.1.6) [gem]" level="application" />
@@ -255,6 +257,7 @@
     <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, RVM: ruby-2.1.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mainsms_api (v0.0.8, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.6.2, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.6.2, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.8.3, RVM: ruby-2.1.6) [gem]" level="application" />
@@ -310,6 +313,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.4, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.48.1, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sidekiq (v4.0.1, RVM: ruby-2.1.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="signed_parameters (v0.0.4, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.10.0, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simplecov-html (v0.10.0, RVM: ruby-2.1.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slim (v3.0.6, RVM: ruby-2.1.6) [gem]" level="application" />
