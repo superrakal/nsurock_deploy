@@ -482,6 +482,3 @@ DEPENDENCIES
   unicorn (~> 4.9.0)
   unicorn_service (~> 0.5.1)
   vkontakte_api (~> 1.4)
-
-BUNDLED WITH
-   1.10.5
