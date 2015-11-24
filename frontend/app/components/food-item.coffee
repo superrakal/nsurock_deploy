@@ -17,7 +17,7 @@ FoodItemComponent = Ember.Component.extend
       @$('#adds').modal('show')
 
     dismiss: ->
-      @get('drink_preorder').destroyRecord()
+      @get('food_preorder').destroyRecord()
       @$('#adds').modal('hide')
 
 `export default FoodItemComponent`

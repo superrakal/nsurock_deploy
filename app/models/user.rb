@@ -32,7 +32,7 @@ class User
   field :last_sign_in_ip,    type: String
 
   def self.find_for_vkontakte_oauth vk_user
-    if user = User.where(:vk_id => "id"+vk_user.user_id.to_s).first
+    if user = User.where(:vk_id => vk_user.user_id).first
       user
     else
       url = "https://api.vkontakte.ru/method/getProfiles?uid=#{vk_user.user_id}&access_token=#{vk_user.token}&fields=photo_big,screen_name"
@@ -41,9 +41,10 @@ class User
       http.use_ssl = true
       response = http.request(Net::HTTP::Get.new(uri.request_uri))
       json = JSON.parse(response.body)["response"][0]
-      User.create!(:vk_id => "id"+vk_user.user_id.to_s, :vk_screen_name => json["screen_name"], :vk_photo => json["photo_big"], :token => vk_user.token, :email => json["screen_name"]+"@vk.com", :password => Devise.friendly_token[0,20], :first_name => json["first_name"], :last_name => json["last_name"])
+      user = User.create!(:vk_id => vk_user.user_id.to_s, :vk_screen_name => json["screen_name"], :vk_photo => json["photo_big"], :token => vk_user.token, :email => json["screen_name"]+"@vk.com", :password => Devise.friendly_token[0,20], :first_name => json["first_name"], :last_name => json["last_name"])
+      user
     end
   end
 
-  # has_many :preorders
+  has_many :preorders, dependent: :destroy
 end

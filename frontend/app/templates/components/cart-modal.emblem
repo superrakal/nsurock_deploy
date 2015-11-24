@@ -32,10 +32,10 @@
               .food
                 .pull-left
                   = food_preorder.food.name
-                  .syurups.hidden-xs
-                    = each drink_preorder.syurups as |syurup|
-                      .syurup
-                        img src=syurup.image
+                  /.syurups.hidden-xs
+                  /  = each drink_preorder.syurups as |syurup|
+                  /    .syurup
+                  /      img src=syurup.image
                 .pull-right{action 'destroyFood' food_preorder}
                   = food_preorder.food.price
                   |&nbsp;руб.&nbsp;

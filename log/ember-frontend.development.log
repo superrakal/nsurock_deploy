@@ -7490,3 +7490,153 @@ TreeMerger (appAndDependencies) (1)           | 46ms
 Concat: Test Support JS (1)                   | 38ms                
 ES6: App Tree (1)                             | 33ms                
 
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding...
+
+Build successful - 3563ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1913ms              
+Babel                                         | 282ms               
+Babel                                         | 263ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1913ms              
+Babel (5)                                     | 715ms (143 ms)      
+CoffeeScriptFilter (2)                        | 232ms (116 ms)      
+
+file changed templates/confirm.emblem
+
+Build successful - 730ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 135ms               
+Funnel: App JS Files                          | 119ms               
+TreeMerger (appAndDependencies)               | 44ms                
+Concat: Test Support JS                       | 38ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 135ms               
+Funnel: App JS Files (1)                      | 119ms               
+SourcemapConcat (3)                           | 72ms (24 ms)        
+Funnel (40)                                   | 45ms (1 ms)         
+TreeMerger (appAndDependencies) (1)           | 44ms                
+Babel (5)                                     | 42ms (8 ms)         
+Concat: Test Support JS (1)                   | 38ms                
+
+file added templates/confirm.emblem___jb_bak___
+file deleted templates/confirm.emblem___jb_bak___
+file changed templates/confirm.emblem
+
+Build successful - 694ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 240ms               
+Funnel: App JS Files                          | 54ms                
+TreeMerger (appAndDependencies)               | 41ms                
+Concat: Test Support JS                       | 38ms                
+SourcemapConcat                               | 34ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 240ms               
+SourcemapConcat (3)                           | 70ms (23 ms)        
+Funnel: App JS Files (1)                      | 54ms                
+TreeMerger (appAndDependencies) (1)           | 41ms                
+Concat: Test Support JS (1)                   | 38ms                
+
+file added templates/confirm.emblem___jb_bak___
+file deleted templates/confirm.emblem___jb_bak___
+file added templates/confirm.emblem___jb_old___
+file changed templates/confirm.emblem
+file deleted templates/confirm.emblem___jb_old___
+
+Build successful - 839ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 246ms               
+Funnel: App JS Files                          | 88ms                
+TreeMerger (appAndDependencies)               | 68ms                
+Concat: Test Support JS                       | 54ms                
+ES6: App Tree                                 | 44ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 246ms               
+Funnel: App JS Files (1)                      | 88ms                
+SourcemapConcat (3)                           | 79ms (26 ms)        
+TreeMerger (appAndDependencies) (1)           | 68ms                
+Concat: Test Support JS (1)                   | 54ms                
+ES6: App Tree (1)                             | 44ms                
+
+file changed templates/confirm.emblem
+
+Build successful - 730ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 199ms               
+SourcemapConcat                               | 63ms                
+Concat: Test Support JS                       | 62ms                
+SourcemapConcat                               | 54ms                
+Funnel: App JS Files                          | 54ms                
+TreeMerger (appAndDependencies)               | 42ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 199ms               
+SourcemapConcat (3)                           | 120ms (40 ms)       
+Concat: Test Support JS (1)                   | 62ms                
+Funnel: App JS Files (1)                      | 54ms                
+TreeMerger (appAndDependencies) (1)           | 42ms                
+
+file added templates/confirm.emblem___jb_old___
+file changed templates/confirm.emblem
+file deleted templates/confirm.emblem___jb_old___
+
+Build successful - 746ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 156ms               
+Funnel: App JS Files                          | 151ms               
+Concat: Test Support JS                       | 67ms                
+TreeMerger (appAndDependencies)               | 42ms                
+SourcemapConcat                               | 38ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 156ms               
+Funnel: App JS Files (1)                      | 151ms               
+SourcemapConcat (3)                           | 75ms (25 ms)        
+Concat: Test Support JS (1)                   | 67ms                
+TreeMerger (appAndDependencies) (1)           | 42ms                
+
+file changed templates/components/cart-modal.emblem
+
+Build successful - 690ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 200ms               
+Concat: Test Support JS                       | 64ms                
+Funnel: App JS Files                          | 57ms                
+TreeMerger (appAndDependencies)               | 48ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 200ms               
+SourcemapConcat (3)                           | 70ms (23 ms)        
+Concat: Test Support JS (1)                   | 64ms                
+Funnel: App JS Files (1)                      | 57ms                
+TreeMerger (appAndDependencies) (1)           | 48ms                
+

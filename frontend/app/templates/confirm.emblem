@@ -1,43 +1,49 @@
 .home
   .container.text-center
     h1.text-center Подтверждение заказа
-    .confirm-form
-      .field
-        .pull-left
-          h4 Номер Вашего заказа
-        .pull-right
-          h4
-            |#
-            = model.number
-      .field
-        h3.text-center Напитки
-      = each model.drink_preorders as |drink_preorder|
+    = if model.total_price
+      .confirm-form
         .field
           .pull-left
-            = drink_preorder.drink.name
+            h4 Номер Вашего заказа
           .pull-right
-            = drink_preorder.sumPrice
-            |&nbsp;руб.
-      h3.text-center Закуски
-      = each model.food_preorders as |food_preorder|
+            h4
+              |#
+              = model.number
+        = if model.drink_preorders.length
+          .field
+            h3.text-center Напитки
+          = each model.drink_preorders as |drink_preorder|
+            .field
+              .pull-left
+                = drink_preorder.drink.name
+              .pull-right
+                = drink_preorder.sumPrice
+                |&nbsp;руб.
+        = if model.food_preorders.length
+          .field
+            h3.text-center Закуски
+          = each model.food_preorders as |food_preorder|
+            .field
+              .pull-left
+                = food_preorder.food.name
+              .pull-right
+                = food_preorder.food.price
+                |&nbsp;руб.
         .field
-          .pull-left
-            = food_preorder.food.name
+          = textarea class="form-control" value=model.comments placeholder='Комментарии к заказу'
+        .field
           .pull-right
-            = food_preorder.food.price
-            |&nbsp;руб.
-      .field
-        = textarea class="form-control" value=model.comments placeholder='Комментарии к заказу'
-      .field
-        .pull-right
-          b style='font-size: 20px'
-            |К оплате:
-            |&nbsp;
-            = model.total_price
-            |&nbsp;руб.
-      .field
-        button.btn.btn-primary{action 'confirm'} Подтвердить
-      .clearfix
+            b style='font-size: 20px'
+              |К оплате:
+              |&nbsp;
+              = model.total_price
+              |&nbsp;руб.
+        .field
+          button.btn.btn-primary{action 'confirm'} Подтвердить
+        .clearfix
+    = else
+      h2.text-center Ваша корзина пуста
 
 #confirmed.modal.fade role="dialog" tabindex="-1"
   .modal-dialog role="document"
@@ -47,6 +53,9 @@
           span aria-hidden="true"  &times;
         h4.modal-title Ваш заказ подтвержден!
       .modal-body
-        p Ваш заказ принят к исполнению! Ждем Вас :)
+        p
+          |Ваш заказ принят к исполнению!
+          br
+          |Ждем Вас :)
       .modal-footer.text-center
         a.btn.btn-default href="/" Спасибо
