@@ -7446,3 +7446,47 @@ Concat: Vendor (1)                            | 1880ms
 Babel (5)                                     | 722ms (144 ms)      
 CoffeeScriptFilter (2)                        | 212ms (106 ms)      
 
+file changed templates/components/drink-item.emblem
+
+Build successful - 713ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 150ms               
+Funnel: App JS Files                          | 115ms               
+Concat: Test Support JS                       | 44ms                
+TreeMerger (appAndDependencies)               | 43ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 150ms               
+Funnel: App JS Files (1)                      | 115ms               
+SourcemapConcat (3)                           | 70ms (23 ms)        
+Babel (5)                                     | 53ms (10 ms)        
+Concat: Test Support JS (1)                   | 44ms                
+TreeMerger (appAndDependencies) (1)           | 43ms                
+
+file added templates/components/drink-item.emblem___jb_old___
+file changed templates/components/drink-item.emblem
+file deleted templates/components/drink-item.emblem___jb_old___
+
+Build successful - 677ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 134ms               
+Funnel: App JS Files                          | 110ms               
+TreeMerger (appAndDependencies)               | 46ms                
+Concat: Test Support JS                       | 38ms                
+SourcemapConcat                               | 35ms                
+ES6: App Tree                                 | 33ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 134ms               
+Funnel: App JS Files (1)                      | 110ms               
+SourcemapConcat (3)                           | 71ms (23 ms)        
+TreeMerger (appAndDependencies) (1)           | 46ms                
+Concat: Test Support JS (1)                   | 38ms                
+ES6: App Tree (1)                             | 33ms                
+

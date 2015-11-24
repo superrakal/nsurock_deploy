@@ -27,7 +27,8 @@
         h3.text-center Сиропы
         .container-fluid
           = each syurups as |syurup|
-            syurup-component syurup=syurup drink_preorder=drink_preorder
+            = if syurup.is_available
+              syurup-component syurup=syurup drink_preorder=drink_preorder
         = if isMoreThanOneSyurup
           .alert.alert-warning.alert-dismissible.fade.in role="alert"
             button.close aria-label="Close" data-dismiss="alert" type="button"
