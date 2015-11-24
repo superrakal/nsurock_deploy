@@ -33,8 +33,6 @@ class User
 
   def self.find_for_vkontakte_oauth vk_user
     if user = User.where(:vk_id => "id"+vk_user.user_id.to_s).first
-      user.token = vk_user.token
-      user.save
       user
     else
       url = "https://api.vkontakte.ru/method/getProfiles?uid=#{vk_user.user_id}&access_token=#{vk_user.token}&fields=photo_big,screen_name"

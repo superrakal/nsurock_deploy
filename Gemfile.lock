@@ -49,8 +49,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    animate-rails (1.0.9)
-      rails
     arel (6.0.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -438,7 +436,6 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  animate-rails
   better_errors
   capistrano
   capistrano-sidekiq
@@ -485,3 +482,6 @@ DEPENDENCIES
   unicorn (~> 4.9.0)
   unicorn_service (~> 0.5.1)
   vkontakte_api (~> 1.4)
+
+BUNDLED WITH
+   1.10.5

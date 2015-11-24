@@ -18,7 +18,6 @@ gem 'html2slim'
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
-gem 'animate-rails'
 
 #Adminpanel
 gem 'rails_admin', '~> 0.6.8'

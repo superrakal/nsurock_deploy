@@ -5,7 +5,7 @@ module Api
       respond_to :json
 
       def index
-        @drinks = Drink.all
+        @drinks = Drink.all.order_by(order_number: 'asc')
         respond_with @drinks
       end
 
