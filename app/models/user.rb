@@ -41,7 +41,7 @@ class User
       http.use_ssl = true
       response = http.request(Net::HTTP::Get.new(uri.request_uri))
       json = JSON.parse(response.body)["response"][0]
-      user = User.create!(:vk_id => vk_user.user_id.to_s, :vk_screen_name => json["screen_name"], :vk_photo => json["photo_big"], :token => vk_user.token, :email => json["screen_name"]+"@vk.com", :password => Devise.friendly_token[0,20], :first_name => json["first_name"], :last_name => json["last_name"])
+      user = User.create(:vk_id => vk_user.user_id.to_s, :vk_screen_name => json["screen_name"], :vk_photo => json["photo_big"], :token => vk_user.token, :email => json["screen_name"]+"@vk.com", :password => Devise.friendly_token[0,20], :first_name => json["first_name"], :last_name => json["last_name"])
       user
     end
   end

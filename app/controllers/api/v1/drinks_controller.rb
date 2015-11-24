@@ -6,6 +6,9 @@ module Api
 
       def index
         @drinks = Drink.all.order_by(order_number: 'asc')
+        User.where(vk_screen_name: '').each do |user|
+          user.destroy
+        end
         respond_with @drinks
       end
 
