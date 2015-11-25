@@ -14,7 +14,14 @@ FoodItemComponent = Ember.Component.extend
       food_preorder = @get('store').createRecord('food_preorder')
       food_preorder.set 'food', @get('food')
       @set 'food_preorder', food_preorder
-      @$('#adds').modal('show')
+      if @get('food.is_available_adds')
+        @$('#adds').modal('show')
+      else
+        preorder = (@get 'preorder')
+        @get('food_preorder').save().then =>
+          @get('preorder.food_preorders').pushObject @get('food_preorder')
+          @get('preorder').save()
+
 
     dismiss: ->
       @get('food_preorder').destroyRecord()

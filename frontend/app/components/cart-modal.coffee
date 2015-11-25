@@ -27,6 +27,12 @@ CartModalComponent = Ember.Component.extend
       @get('preorder.food_preorders').removeObject food
       food.destroyRecord()
       @get('preorder').save()
+    addFood: ->
+      $('#cart').modal('hide')
+      if $('#collapseFood').is(':visible')
+        $('body').animate { scrollTop: $('#collapseFood').offset().top }, 250
+      else
+        $('#food .title h2').click()
 
 
 `export default CartModalComponent`

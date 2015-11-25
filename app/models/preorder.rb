@@ -9,6 +9,7 @@ class Preorder
   field :status, default: 'Создан'
   field :number, type: Integer
 
+
   has_and_belongs_to_many :drink_preorders
   has_and_belongs_to_many :food_preorders
   belongs_to :user
@@ -26,7 +27,7 @@ class Preorder
     self.food_preorders.each do |food_preorder|
       total_price = total_price + food_preorder.food.price
     end
-    total_price
+    total_price - (self.discount_count*25)
   end
   
   def new_preorder_message
@@ -61,9 +62,11 @@ class Preorder
       self.food_preorders.each do |food_preorder|
         food = food_preorder.food.name.gsub!(/ /," ").to_s
         message = message+"--"+food+";\n"
-        message = message+"----Тип хлеба: "+food_preorder.bread_type.to_s+"\n"
-        if food_preorder.sauce.present?
-          message = message+"----Соус: "+food_preorder.sauce.to_s
+        if food_preorder.is_available_adds
+          message = message+"----Тип хлеба: "+food_preorder.bread_type.to_s+"\n"
+          if food_preorder.sauce.present?
+            message = message+"----Соус: "+food_preorder.sauce.to_s
+          end
         end
         message = message+"\n\n"
       end
@@ -77,6 +80,14 @@ class Preorder
     end
     message = message+"К оплате: "+self.total_price.to_s+" руб."
     return message
+  end
+
+  def discount_count
+    if (self.drink_preorders.length > 0) && (self.food_preorders.length > 0)
+      return [self.drink_preorders.length, self.food_preorders.length].min
+    else
+      return 0
+    end
   end
 
   validates_uniqueness_of :number

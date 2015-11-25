@@ -2,6 +2,8 @@
   .container.text-center
     h1.text-center Подтверждение заказа
     = if model.total_price
+
+
       .confirm-form
         .field
           .pull-left
@@ -33,12 +35,20 @@
         .field
           = textarea class="form-control" value=model.comments placeholder='Комментарии к заказу'
         .field
+          = if model.discount_count
+            .pull-left
+              b style='font-size: 20px'
+                |Комба-скидка:
+                |&nbsp;
+                =model.discount_count
+                |*25 руб.
           .pull-right
             b style='font-size: 20px'
               |К оплате:
               |&nbsp;
               = model.total_price
               |&nbsp;руб.
+          .clearfix
         .field
           button.btn.btn-primary{action 'confirm'} Подтвердить
         .clearfix

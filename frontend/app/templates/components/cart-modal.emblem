@@ -32,10 +32,6 @@
               .food
                 .pull-left
                   = food_preorder.food.name
-                  /.syurups.hidden-xs
-                  /  = each drink_preorder.syurups as |syurup|
-                  /    .syurup
-                  /      img src=syurup.image
                 .pull-right{action 'destroyFood' food_preorder}
                   = food_preorder.food.price
                   |&nbsp;руб.&nbsp;
@@ -44,8 +40,10 @@
                 .clearfix
           = else
             p.text-center Вы не выбрали закуску
-        .comments class=isConfirmed:super
-          = textarea class="form-control" placeholder='Коментарии к заказу' value=preorder.comments
+            .text-center{action 'addFood'}
+              button.btn-primary Добавить закуску
+        .discount
+          h4.text-center При заказе комбо коффе+закуса скидка 25р.
       .modal-footer
         button.btn.btn-default data-dismiss="modal" type="button"  Закрыть
         = if size

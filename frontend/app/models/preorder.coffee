@@ -10,6 +10,7 @@ Preorder = DS.Model.extend
   food_preorders:  DS.hasMany 'food-preorder', async: true
   created_at:      DS.attr 'date'
   user:            DS.belongsTo 'user', async: true
+  discount_count:  DS.attr 'number'
 
   formatted_created_at: (->
     date = @get 'created_at'

@@ -4,6 +4,8 @@ class Food
 
   field :name
   field :price,  type: Integer
+  field :is_available_adds, type: Boolean, default: true
+
   has_mongoid_attached_file :image,
                             :styles => {
                                 :original => ['640x480', :jpg],
