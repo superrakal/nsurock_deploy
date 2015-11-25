@@ -35,7 +35,7 @@ class Preorder
     if self.drink_preorders.count > 0
       message = message+"Напитки:\n"
       self.drink_preorders.each do |drink_preorder|
-        с_drink = drink_preorder.drink.name.gsub!(/ /," ").to_s
+        с_drink = drink_preorder.drink.name
         if с_drink.length > 0
           drink=с_drink
         else
@@ -45,7 +45,7 @@ class Preorder
         if drink_preorder.syurups.count > 0
           message = message+"----Сиропы: "
           drink_preorder.syurups.each do |syurup|
-            c_syurup = syurup.name.gsub!(/ /," ").to_s
+            c_syurup = syurup.name
             if c_syurup.length > 0
               syurup=c_syurup
             else
@@ -58,11 +58,11 @@ class Preorder
       end
     end
     if self.food_preorders.count > 0
-      message = message+"Закуски: "
+      message = message+"Закуски:\n"
       self.food_preorders.each do |food_preorder|
-        food = food_preorder.food.name.gsub!(/ /," ").to_s
+        food = food_preorder.food.name
         message = message+"--"+food+";\n"
-        if food_preorder.is_available_adds
+        if food_preorder.food.is_available_adds
           message = message+"----Тип хлеба: "+food_preorder.bread_type.to_s+"\n"
           if food_preorder.sauce.present?
             message = message+"----Соус: "+food_preorder.sauce.to_s
@@ -72,7 +72,7 @@ class Preorder
       end
     end
     if self.comments.present?
-      comments = self.comments.gsub!(/ /," ").to_s
+      comments = self.comments
       if comments.length == 0
         comments = self.comments.to_s
       end

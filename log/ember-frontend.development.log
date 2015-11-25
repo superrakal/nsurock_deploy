@@ -8262,3 +8262,100 @@ TreeMerger (appAndDependencies) (1)           | 64ms
 Concat: Test Support JS (1)                   | 37ms                
 Babel (5)                                     | 36ms (7 ms)         
 
+Future versions of Ember CLI will not support v0.10.25. Please update to Node 0.12 or io.js.
+version: 1.13.1
+Could not find watchman, falling back to NodeWatcher for file system events.
+Visit http://www.ember-cli.com/#watchman for more info.
+BuildingBuilding.Building..Building...BuildingBuilding...
+
+Build successful - 3647ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 1981ms              
+Babel                                         | 296ms               
+Babel                                         | 257ms               
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 1981ms              
+Babel (5)                                     | 721ms (144 ms)      
+CoffeeScriptFilter (2)                        | 236ms (118 ms)      
+
+file changed components/cart-modal.coffee
+
+Build successful - 715ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 179ms               
+Funnel: App JS Files                          | 72ms                
+TreeMerger (appAndDependencies)               | 39ms                
+Concat: Test Support JS                       | 36ms                
+SourcemapConcat                               | 36ms                
+Babel                                         | 36ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 179ms               
+SourcemapConcat (3)                           | 72ms (24 ms)        
+Funnel: App JS Files (1)                      | 72ms                
+Babel (5)                                     | 70ms (14 ms)        
+TreeMerger (appAndDependencies) (1)           | 39ms                
+CoffeeScriptFilter (2)                        | 37ms (18 ms)        
+Concat: Test Support JS (1)                   | 36ms                
+
+file added templates/components/cart-modal.emblem___jb_old___
+file changed templates/components/cart-modal.emblem
+file deleted templates/components/cart-modal.emblem___jb_old___
+
+Build successful - 642ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 195ms               
+Funnel: App JS Files                          | 54ms                
+TreeMerger (appAndDependencies)               | 43ms                
+Concat: Test Support JS                       | 37ms                
+ES6: App Tree                                 | 32ms                
+SourcemapConcat                               | 32ms                
+SourcemapConcat                               | 32ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 195ms               
+SourcemapConcat (3)                           | 67ms (22 ms)        
+Funnel: App JS Files (1)                      | 54ms                
+TreeMerger (appAndDependencies) (1)           | 43ms                
+Concat: Test Support JS (1)                   | 37ms                
+ES6: App Tree (1)                             | 32ms                
+
+file added templates/components/cart-modal.emblem___jb_bak___
+file deleted templates/components/cart-modal.emblem___jb_bak___
+file added templates/components/cart-modal.emblem___jb_old___
+file changed templates/components/cart-modal.emblem
+file deleted templates/components/cart-modal.emblem___jb_old___
+
+Build successful - 780ms.
+
+Slowest Trees                                 | Total               
+----------------------------------------------+---------------------
+Concat: Vendor                                | 198ms               
+Concat: Test Support JS                       | 60ms                
+SourcemapConcat                               | 56ms                
+Funnel: App JS Files                          | 52ms                
+Concat: App                                   | 45ms                
+TreeMerger (appAndDependencies)               | 44ms                
+ES6: App Tree                                 | 42ms                
+
+Slowest Trees (cumulative)                    | Total (avg)         
+----------------------------------------------+---------------------
+Concat: Vendor (1)                            | 198ms               
+SourcemapConcat (3)                           | 93ms (31 ms)        
+Concat: Test Support JS (1)                   | 60ms                
+Funnel: App JS Files (1)                      | 52ms                
+Concat: App (1)                               | 45ms                
+Babel (5)                                     | 44ms (8 ms)         
+TreeMerger (appAndDependencies) (1)           | 44ms                
+ES6: App Tree (1)                             | 42ms                
+

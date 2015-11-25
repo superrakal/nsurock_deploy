@@ -33,6 +33,12 @@ CartModalComponent = Ember.Component.extend
         $('body').animate { scrollTop: $('#collapseFood').offset().top }, 250
       else
         $('#food .title h2').click()
+    addDrink: ->
+      $('#cart').modal('hide')
+      if $('#collapseDrink').is(':visible')
+        $('body').animate { scrollTop: $('#collapseDrink').offset().top }, 250
+      else
+        $('#drinks .title h2').click()
 
 
 `export default CartModalComponent`

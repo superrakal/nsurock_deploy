@@ -13,10 +13,10 @@
               .drink
                 .pull-left
                   = drink_preorder.drink.name
-                  .syurups.hidden-xs
-                    = each drink_preorder.syurups as |syurup|
-                      .syurup
-                        img src=syurup.image
+                  /.syurups.hidden-xs
+                  /  = each drink_preorder.syurups as |syurup|
+                  /    .syurup
+                  /      img src=syurup.image
                 .pull-right{action 'destroyDrink' drink_preorder}
                   = drink_preorder.sumPrice
                   |&nbsp;руб.&nbsp;
@@ -25,6 +25,8 @@
                 .clearfix
           = else
             p.text-center Вы не выбрали напитки
+            .text-center{action 'addDrink'}
+              button.btn-primary Добавить напиток
         .foods
           h3.text-center Закуска
           = if foodPreorderCount
@@ -43,7 +45,7 @@
             .text-center{action 'addFood'}
               button.btn-primary Добавить закуску
         .discount
-          h4.text-center При заказе комбо коффе+закуса скидка 25р.
+          h4.text-center При заказе комбо кофе+закуса скидка 25р.
       .modal-footer
         button.btn.btn-default data-dismiss="modal" type="button"  Закрыть
         = if size
