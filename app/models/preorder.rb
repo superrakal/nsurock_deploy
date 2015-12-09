@@ -16,6 +16,14 @@ class Preorder
   increments :number, model_name: 'Preorder'
   index number: 1
 
+  def discount_count
+    if (self.drink_preorders.length > 0) && (self.food_preorders.length > 0)
+      return [self.drink_preorders.length, self.food_preorders.length].min
+    else
+      return 0
+    end
+  end
+
   def total_price
     total_price = 0
     self.drink_preorders.each do |drink_preorder|
@@ -29,7 +37,7 @@ class Preorder
     end
     total_price - (self.discount_count*25)
   end
-  
+
   def new_preorder_message
     message = "Новый заказ! Номер заказа: #{self.number}. Заказчик: #{self.user.first_name} #{self.user.last_name}\n\n"
     if self.drink_preorders.count > 0
@@ -82,13 +90,7 @@ class Preorder
     return message
   end
 
-  def discount_count
-    if (self.drink_preorders.length > 0) && (self.food_preorders.length > 0)
-      return [self.drink_preorders.length, self.food_preorders.length].min
-    else
-      return 0
-    end
-  end
+
 
   validates_uniqueness_of :number
 end
